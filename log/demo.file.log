@@ -1,0 +1,12 @@
+2017-09-27 16:14:27,034 INFO [main] c.x.l.Main [Main.java:17] hello ,just for log4j!
+2017-09-27 16:14:27,037 INFO [main] c.x.l.Main [Main.java:18] hello ,just test for slf4j! ok
+2017-09-27 16:14:48,846 INFO [main] c.x.l.Main [Main.java:17] hello ,just for log4j!
+2017-09-27 16:14:48,849 INFO [main] c.x.l.Main [Main.java:18] hello ,just test for slf4j! ok
+2017-09-27 16:16:04,179 INFO [main] c.x.l.Main [Main.java:17] hello ,just for log4j!
+2017-09-27 16:16:04,182 INFO [main] c.x.l.Main [Main.java:18] hello ,just test for slf4j! ok
+2017-09-27 16:16:13,394 INFO [main] c.x.l.Main [Main.java:17] hello ,just for log4j!
+2017-09-27 16:16:13,397 INFO [main] c.x.l.Main [Main.java:18] hello ,just test for slf4j! ok
+2017-09-27 16:16:25,047 INFO [main] c.x.l.Main [Main.java:17] hello ,just for log4j!
+2017-09-27 16:16:25,051 INFO [main] c.x.l.Main [Main.java:18] hello ,just test for slf4j! ok
+2017-09-27 16:16:54,754 INFO [main] c.x.l.Main [Main.java:17] hello ,just for log4j!
+2017-09-27 16:16:54,757 INFO [main] c.x.l.Main [Main.java:18] hello ,just test for slf4j! ok
