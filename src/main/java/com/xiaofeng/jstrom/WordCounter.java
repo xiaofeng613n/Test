@@ -32,6 +32,7 @@ public class WordCounter implements IRichBolt
 	public void execute(Tuple input)
 	{
 		String str = input.getString(0);
+		System.out.println(this + "======" + str);
 		if (!counters.containsKey(str))
 		{
 			counters.put(str, 1);
