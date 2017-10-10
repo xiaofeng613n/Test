@@ -37,3 +37,6 @@ http://kelgon.iteye.com/blog/2287558
 http://www.jianshu.com/p/2027add8747c
 
 http://zqhxuyuan.github.io/2016/02/20/Kafka-Consumer-New/
+
+
+http://blog.csdn.net/u010003835/article/details/52235572
