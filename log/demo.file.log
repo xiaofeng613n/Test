@@ -1,0 +1,1829 @@
+2017-10-10 11:12:14,311 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:178] ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [10.33.4.238:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = all
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-10-10 11:12:14,476 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bufferpool-wait-time
+2017-10-10 11:12:14,492 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name buffer-exhausted-records
+2017-10-10 11:12:14,497 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 1 to Cluster(nodes = [10.33.4.238:9092 (id: -1 rack: null)], partitions = [])
+2017-10-10 11:12:14,732 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-closed:
+2017-10-10 11:12:14,733 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-created:
+2017-10-10 11:12:14,734 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent-received:
+2017-10-10 11:12:14,735 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent:
+2017-10-10 11:12:14,739 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-received:
+2017-10-10 11:12:14,740 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name select-time:
+2017-10-10 11:12:14,742 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name io-time:
+2017-10-10 11:12:14,757 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name batch-size
+2017-10-10 11:12:14,758 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name compression-rate
+2017-10-10 11:12:14,759 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name queue-time
+2017-10-10 11:12:14,760 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name request-time
+2017-10-10 11:12:14,761 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name produce-throttle-time
+2017-10-10 11:12:14,762 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-per-request
+2017-10-10 11:12:14,764 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name record-retries
+2017-10-10 11:12:14,764 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name errors
+2017-10-10 11:12:14,765 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name record-size-max
+2017-10-10 11:12:14,773 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.p.i.Sender [Sender.java:129] Starting Kafka producer I/O thread.
+2017-10-10 11:12:14,775 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:178] ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [10.33.4.238:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = producer-1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = all
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-10-10 11:12:14,778 WARN [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:186] The configuration enable.auto.commit = true was supplied but isn't a known config.
+2017-10-10 11:12:14,779 WARN [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:186] The configuration auto.commit.interval.ms = 1000 was supplied but isn't a known config.
+2017-10-10 11:12:14,788 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:83] Kafka version : 0.10.0.0
+2017-10-10 11:12:14,789 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:84] Kafka commitId : b8642491e78c5a13
+2017-10-10 11:12:14,790 DEBUG [main] o.a.k.c.p.KafkaProducer [KafkaProducer.java:329] Kafka producer started
+2017-10-10 11:12:36,074 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:644] Initialize connection to node -1 for sending metadata request
+2017-10-10 11:12:36,075 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.238:9092.
+2017-10-10 11:12:57,084 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-sent
+2017-10-10 11:12:57,087 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-received
+2017-10-10 11:12:57,089 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.latency
+2017-10-10 11:12:57,127 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.n.Selector [Selector.java:345] Connection with /10.33.4.238 disconnected
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_144]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_144]
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:51) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:73) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:309) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:283) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:229) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:134) [kafka-clients-0.10.0.0.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+2017-10-10 11:12:57,128 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:463] Node -1 disconnected.
+2017-10-10 11:12:57,133 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:625] Give up sending metadata request since no node is available
+2017-10-10 11:12:57,233 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:644] Initialize connection to node -1 for sending metadata request
+2017-10-10 11:12:57,234 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.238:9092.
+2017-10-10 11:13:18,233 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.n.Selector [Selector.java:345] Connection with /10.33.4.238 disconnected
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_144]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_144]
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:51) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:73) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:309) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:283) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:229) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:134) [kafka-clients-0.10.0.0.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+2017-10-10 11:13:18,234 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:463] Node -1 disconnected.
+2017-10-10 11:13:18,237 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:625] Give up sending metadata request since no node is available
+2017-10-10 11:13:18,337 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:644] Initialize connection to node -1 for sending metadata request
+2017-10-10 11:13:18,338 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.238:9092.
+2017-10-10 11:24:10,389 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.238:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 1000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = 
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+2017-10-10 11:24:10,396 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:597] Starting the Kafka consumer
+2017-10-10 11:24:10,548 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 1 to Cluster(nodes = [10.33.4.238:9092 (id: -1 rack: null)], partitions = [])
+2017-10-10 11:24:10,792 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-closed:
+2017-10-10 11:24:10,797 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-created:
+2017-10-10 11:24:10,797 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent-received:
+2017-10-10 11:24:10,798 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent:
+2017-10-10 11:24:10,803 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-received:
+2017-10-10 11:24:10,804 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name select-time:
+2017-10-10 11:24:10,805 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name io-time:
+2017-10-10 11:24:10,829 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.238:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = consumer-1
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 1000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = 
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+2017-10-10 11:24:10,882 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name heartbeat-latency
+2017-10-10 11:24:10,883 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name join-latency
+2017-10-10 11:24:10,884 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name sync-latency
+2017-10-10 11:24:10,900 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name commit-latency
+2017-10-10 11:24:10,929 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-fetched
+2017-10-10 11:24:10,931 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-fetched
+2017-10-10 11:24:10,932 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-latency
+2017-10-10 11:24:10,933 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-lag
+2017-10-10 11:24:10,934 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-throttle-time
+2017-10-10 11:24:10,944 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:83] Kafka version : 0.10.0.0
+2017-10-10 11:24:10,945 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:84] Kafka commitId : b8642491e78c5a13
+2017-10-10 11:24:10,946 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:696] Kafka consumer created
+2017-10-10 11:24:13,353 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:802] Subscribed to topic(s): topic1
+2017-10-10 11:24:13,354 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:476] Sending coordinator request for group  to broker 10.33.4.238:9092 (id: -1 rack: null)
+2017-10-10 11:24:13,403 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.238:9092.
+2017-10-10 11:24:13,409 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:13,508 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:40,491 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.238:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 1000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = 
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+2017-10-10 11:24:40,498 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:597] Starting the Kafka consumer
+2017-10-10 11:24:40,654 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 1 to Cluster(nodes = [10.33.4.238:9092 (id: -1 rack: null)], partitions = [])
+2017-10-10 11:24:40,905 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-closed:
+2017-10-10 11:24:40,909 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-created:
+2017-10-10 11:24:40,910 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent-received:
+2017-10-10 11:24:40,911 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent:
+2017-10-10 11:24:40,915 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-received:
+2017-10-10 11:24:40,916 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name select-time:
+2017-10-10 11:24:40,917 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name io-time:
+2017-10-10 11:24:40,942 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.238:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = consumer-1
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 1000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = 
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+2017-10-10 11:24:40,996 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name heartbeat-latency
+2017-10-10 11:24:40,997 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name join-latency
+2017-10-10 11:24:40,998 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name sync-latency
+2017-10-10 11:24:41,012 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name commit-latency
+2017-10-10 11:24:41,038 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-fetched
+2017-10-10 11:24:41,039 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-fetched
+2017-10-10 11:24:41,040 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-latency
+2017-10-10 11:24:41,042 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-lag
+2017-10-10 11:24:41,042 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-throttle-time
+2017-10-10 11:24:41,052 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:83] Kafka version : 0.10.0.0
+2017-10-10 11:24:41,053 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:84] Kafka commitId : b8642491e78c5a13
+2017-10-10 11:24:41,054 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:696] Kafka consumer created
+2017-10-10 11:24:47,142 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:802] Subscribed to topic(s): kafkatopic
+2017-10-10 11:24:51,042 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:476] Sending coordinator request for group  to broker 10.33.4.238:9092 (id: -1 rack: null)
+2017-10-10 11:24:51,119 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.238:9092.
+2017-10-10 11:24:51,133 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:51,233 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:51,333 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:51,433 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:51,533 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:51,633 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:51,733 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:51,833 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:51,933 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:52,033 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:52,133 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:52,233 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:52,333 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:52,433 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:52,533 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:52,633 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:52,733 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:52,833 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:52,933 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:53,033 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:53,133 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:53,233 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:53,333 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:53,433 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:53,533 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:53,634 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:53,735 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:53,835 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:53,935 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:54,035 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:54,135 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:54,235 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:54,335 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:54,435 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:54,535 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:54,635 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:54,735 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:54,835 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:54,935 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:55,035 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:55,135 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:55,235 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:55,335 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:55,435 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:55,536 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:55,637 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:55,737 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:55,837 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:55,937 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:56,037 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:56,137 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:56,237 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:56,337 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:56,437 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:56,537 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:56,637 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:56,737 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:56,837 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:56,937 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:57,037 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:57,137 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:57,237 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:57,337 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:57,437 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:57,537 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:57,637 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:57,737 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:57,838 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:57,938 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:58,038 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:58,138 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:58,238 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:58,338 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:58,438 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:58,538 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:58,638 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:58,738 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:58,838 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:58,938 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:59,038 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:59,138 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:59,238 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:59,338 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:59,438 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:59,538 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:59,638 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:59,738 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:59,838 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:24:59,938 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:00,038 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:00,138 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:00,238 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:00,338 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:00,438 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:00,538 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:00,638 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:00,738 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:00,838 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:00,938 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:01,038 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:01,138 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:01,238 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:01,338 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:01,438 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:01,538 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:01,638 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:01,738 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:01,838 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:01,938 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:02,038 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:02,138 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:02,238 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:02,338 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:02,438 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:02,538 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:02,638 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:02,738 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:02,838 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:02,938 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:03,038 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:03,138 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:03,238 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:03,338 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:03,438 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:03,538 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:03,638 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:03,738 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:03,838 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:03,938 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:04,038 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:04,138 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:04,238 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:04,338 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:04,438 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:04,538 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:04,638 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:04,738 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:04,838 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:04,938 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:05,038 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:05,138 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:05,238 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:05,338 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:05,438 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:05,538 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:05,638 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:05,738 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:05,838 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:05,938 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:06,038 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:06,138 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:06,238 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:06,338 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:06,438 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:06,538 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:06,638 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:06,738 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:06,838 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:06,938 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:07,038 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:07,138 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:07,238 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:07,338 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:07,438 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:07,538 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:07,638 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:07,738 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:07,838 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:07,939 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:08,039 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:08,139 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:08,239 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:08,339 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:08,439 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:08,539 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:08,639 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:08,740 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:08,841 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:08,941 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:09,041 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:09,141 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:09,241 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:09,341 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:09,441 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:09,541 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:09,641 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:09,741 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:09,841 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:09,941 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:10,041 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:10,141 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:10,241 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:10,341 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:10,441 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:10,541 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:10,641 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:10,741 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:10,841 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:10,941 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:11,041 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:11,141 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:11,241 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:11,341 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:11,441 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:11,541 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:11,641 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:11,741 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:11,841 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:11,941 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:12,041 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:12,122 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-sent
+2017-10-10 11:25:12,129 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-received
+2017-10-10 11:25:12,132 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.latency
+2017-10-10 11:25:12,151 DEBUG [main] o.a.k.c.n.Selector [Selector.java:345] Connection with /10.33.4.238 disconnected
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_144]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_144]
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:51) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:73) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:309) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:283) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.clientPoll(ConsumerNetworkClient.java:360) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:224) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:192) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:163) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:179) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.pollOnce(KafkaConsumer.java:973) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:937) [kafka-clients-0.10.0.0.jar:na]
+	at com.xiaofeng.kafka.KafkaTest.testConsumer(KafkaTest.java:60) [classes/:na]
+	at com.xiaofeng.kafka.KafkaTest.main(KafkaTest.java:21) [classes/:na]
+2017-10-10 11:25:12,155 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:463] Node -1 disconnected.
+2017-10-10 11:25:12,160 DEBUG [main] o.a.k.c.c.i.ConsumerNetworkClient [ConsumerNetworkClient.java:422] Cancelled GROUP_COORDINATOR request ClientRequest(expectResponse=true, callback=org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient$RequestFutureCompletionHandler@4b8ee4de, request=RequestSend(header={api_key=10,api_version=0,correlation_id=0,client_id=consumer-1}, body={group_id=}), createdTimeMs=1507605891105, sendTimeMs=0) with correlation id 0 due to node -1 being disconnected
+2017-10-10 11:25:12,161 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:12,162 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:625] Give up sending metadata request since no node is available
+2017-10-10 11:25:12,256 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:12,262 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:644] Initialize connection to node -1 for sending metadata request
+2017-10-10 11:25:12,263 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.238:9092.
+2017-10-10 11:25:12,356 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:12,456 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:12,556 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:12,657 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:12,757 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:12,857 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:12,958 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:13,059 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:13,159 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:13,260 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:13,360 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:13,461 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:13,561 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:13,661 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:13,762 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:13,862 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:13,962 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:14,062 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:14,163 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:14,263 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:14,363 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:14,464 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:14,565 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:14,666 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:14,767 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:14,868 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:14,968 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:15,068 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:15,168 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:15,269 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:15,370 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:15,471 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:15,571 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:15,671 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:15,772 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:15,873 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:15,974 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:16,075 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:16,175 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:16,275 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:16,376 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:16,477 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:16,577 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:16,678 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:16,779 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:16,880 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:16,981 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:17,082 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:17,183 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:17,284 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:17,385 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:17,486 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:17,587 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:17,688 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:17,788 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:17,889 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:17,989 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:18,089 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:18,189 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:18,290 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:18,391 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:18,492 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:18,592 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:18,693 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:18,793 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:18,893 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:18,994 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:19,095 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:19,196 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:19,296 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:19,397 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:19,498 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:19,599 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:19,700 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:19,801 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:19,902 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:20,002 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:20,103 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:20,203 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:20,304 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:20,404 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:20,505 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:20,606 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:20,706 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:20,806 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:20,906 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:21,006 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:21,106 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:21,207 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:21,307 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:21,407 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:21,508 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:21,609 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:21,709 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:21,809 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:21,910 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:22,011 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:22,112 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:22,212 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:22,312 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:22,413 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:22,514 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:22,614 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:22,715 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:22,816 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:22,916 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:23,017 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:23,118 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:23,218 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:23,319 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:23,420 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:23,520 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:23,621 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:23,722 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:23,823 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:23,923 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:24,023 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:24,123 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:24,224 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:24,324 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:24,425 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:24,526 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:24,627 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:24,728 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:24,828 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:24,929 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:25,030 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:25,130 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:25,231 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:25,331 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:25,431 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:25,531 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:25,631 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:25,731 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:25,832 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:25,933 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:26,034 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:26,135 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:26,235 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:26,335 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:26,435 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:26,536 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:26,636 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:26,737 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:26,838 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:26,938 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:27,038 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:27,138 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:25:27,239 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 11:26:43,953 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:178] ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [10.33.4.238:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = all
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-10-10 11:26:44,118 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bufferpool-wait-time
+2017-10-10 11:26:44,134 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name buffer-exhausted-records
+2017-10-10 11:26:44,140 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 1 to Cluster(nodes = [10.33.4.238:9092 (id: -1 rack: null)], partitions = [])
+2017-10-10 11:26:44,374 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-closed:
+2017-10-10 11:26:44,375 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-created:
+2017-10-10 11:26:44,376 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent-received:
+2017-10-10 11:26:44,377 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent:
+2017-10-10 11:26:44,382 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-received:
+2017-10-10 11:26:44,383 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name select-time:
+2017-10-10 11:26:44,384 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name io-time:
+2017-10-10 11:26:44,398 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name batch-size
+2017-10-10 11:26:44,399 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name compression-rate
+2017-10-10 11:26:44,400 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name queue-time
+2017-10-10 11:26:44,402 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name request-time
+2017-10-10 11:26:44,403 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name produce-throttle-time
+2017-10-10 11:26:44,404 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-per-request
+2017-10-10 11:26:44,405 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name record-retries
+2017-10-10 11:26:44,406 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name errors
+2017-10-10 11:26:44,407 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name record-size-max
+2017-10-10 11:26:44,414 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.p.i.Sender [Sender.java:129] Starting Kafka producer I/O thread.
+2017-10-10 11:26:44,416 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:178] ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [10.33.4.238:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = producer-1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = all
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-10-10 11:26:44,418 WARN [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:186] The configuration enable.auto.commit = true was supplied but isn't a known config.
+2017-10-10 11:26:44,419 WARN [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:186] The configuration auto.commit.interval.ms = 1000 was supplied but isn't a known config.
+2017-10-10 11:26:44,428 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:83] Kafka version : 0.10.0.0
+2017-10-10 11:26:44,428 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:84] Kafka commitId : b8642491e78c5a13
+2017-10-10 11:26:44,430 DEBUG [main] o.a.k.c.p.KafkaProducer [KafkaProducer.java:329] Kafka producer started
+2017-10-10 11:26:55,521 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:644] Initialize connection to node -1 for sending metadata request
+2017-10-10 11:26:55,522 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.238:9092.
+2017-10-10 11:27:16,539 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-sent
+2017-10-10 11:27:16,542 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-received
+2017-10-10 11:27:16,544 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.latency
+2017-10-10 11:27:16,558 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.n.Selector [Selector.java:345] Connection with /10.33.4.238 disconnected
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_144]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_144]
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:51) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:73) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:309) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:283) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:229) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:134) [kafka-clients-0.10.0.0.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+2017-10-10 11:27:16,559 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:463] Node -1 disconnected.
+2017-10-10 11:27:16,560 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:625] Give up sending metadata request since no node is available
+2017-10-10 11:27:16,660 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:644] Initialize connection to node -1 for sending metadata request
+2017-10-10 11:27:16,661 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.238:9092.
+2017-10-10 11:27:37,662 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.n.Selector [Selector.java:345] Connection with /10.33.4.238 disconnected
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_144]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_144]
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:51) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:73) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:309) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:283) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:229) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:134) [kafka-clients-0.10.0.0.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+2017-10-10 11:27:37,663 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:463] Node -1 disconnected.
+2017-10-10 11:27:37,664 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:625] Give up sending metadata request since no node is available
+2017-10-10 11:27:37,764 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:644] Initialize connection to node -1 for sending metadata request
+2017-10-10 11:27:37,765 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.238:9092.
+2017-10-10 11:27:55,520 DEBUG [main] o.a.k.c.p.KafkaProducer [KafkaProducer.java:477] Exception occurred during message send:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2017-10-10 11:28:01,272 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.n.Selector [Selector.java:345] Connection with /10.33.4.238 disconnected
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_144]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_144]
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:51) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:73) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:309) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:283) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:229) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:134) [kafka-clients-0.10.0.0.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+2017-10-10 11:28:01,273 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:463] Node -1 disconnected.
+2017-10-10 11:28:01,274 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:625] Give up sending metadata request since no node is available
+2017-10-10 11:28:01,374 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:644] Initialize connection to node -1 for sending metadata request
+2017-10-10 11:28:01,375 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.238:9092.
+2017-10-10 11:28:22,376 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.n.Selector [Selector.java:345] Connection with /10.33.4.238 disconnected
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_144]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_144]
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:51) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:73) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:309) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:283) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:229) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:134) [kafka-clients-0.10.0.0.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+2017-10-10 11:28:22,377 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:463] Node -1 disconnected.
+2017-10-10 11:28:22,379 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:625] Give up sending metadata request since no node is available
+2017-10-10 11:28:22,479 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:644] Initialize connection to node -1 for sending metadata request
+2017-10-10 11:28:22,479 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.238:9092.
+2017-10-10 11:28:43,488 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.n.Selector [Selector.java:345] Connection with /10.33.4.238 disconnected
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_144]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_144]
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:51) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:73) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:309) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:283) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:229) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:134) [kafka-clients-0.10.0.0.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+2017-10-10 11:28:43,489 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:463] Node -1 disconnected.
+2017-10-10 11:28:43,582 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:644] Initialize connection to node -1 for sending metadata request
+2017-10-10 11:28:43,582 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.238:9092.
+2017-10-10 11:29:01,275 DEBUG [main] o.a.k.c.p.KafkaProducer [KafkaProducer.java:477] Exception occurred during message send:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2017-10-10 11:37:31,636 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.n.Selector [Selector.java:345] Connection with /10.33.4.238 disconnected
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_144]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_144]
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:51) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:73) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:309) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:283) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:229) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:134) [kafka-clients-0.10.0.0.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+2017-10-10 11:37:31,638 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:463] Node -1 disconnected.
+2017-10-10 11:37:31,733 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:644] Initialize connection to node -1 for sending metadata request
+2017-10-10 11:37:31,733 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.238:9092.
+2017-10-10 11:38:27,267 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:178] ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [10.0.0.100:9092, 10.0.0.101:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-10-10 11:38:27,347 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bufferpool-wait-time
+2017-10-10 11:38:27,352 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name buffer-exhausted-records
+2017-10-10 11:38:27,354 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 1 to Cluster(nodes = [10.0.0.101:9092 (id: -2 rack: null), 10.0.0.100:9092 (id: -1 rack: null)], partitions = [])
+2017-10-10 11:38:27,523 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-closed:
+2017-10-10 11:38:27,525 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-created:
+2017-10-10 11:38:27,525 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent-received:
+2017-10-10 11:38:27,525 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent:
+2017-10-10 11:38:27,527 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-received:
+2017-10-10 11:38:27,528 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name select-time:
+2017-10-10 11:38:27,528 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name io-time:
+2017-10-10 11:38:27,532 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name batch-size
+2017-10-10 11:38:27,533 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name compression-rate
+2017-10-10 11:38:27,533 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name queue-time
+2017-10-10 11:38:27,533 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name request-time
+2017-10-10 11:38:27,533 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name produce-throttle-time
+2017-10-10 11:38:27,534 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-per-request
+2017-10-10 11:38:27,534 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name record-retries
+2017-10-10 11:38:27,534 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name errors
+2017-10-10 11:38:27,534 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name record-size-max
+2017-10-10 11:38:27,536 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.p.i.Sender [Sender.java:129] Starting Kafka producer I/O thread.
+2017-10-10 11:38:27,537 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:178] ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [10.0.0.100:9092, 10.0.0.101:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = producer-1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-10-10 11:38:27,540 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:83] Kafka version : 0.10.0.0
+2017-10-10 11:38:27,540 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:84] Kafka commitId : b8642491e78c5a13
+2017-10-10 11:38:27,541 DEBUG [main] o.a.k.c.p.KafkaProducer [KafkaProducer.java:329] Kafka producer started
+2017-10-10 11:38:27,543 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:644] Initialize connection to node -2 for sending metadata request
+2017-10-10 11:38:27,544 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -2 at 10.0.0.101:9092.
+2017-10-10 11:38:27,650 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:644] Initialize connection to node -1 for sending metadata request
+2017-10-10 11:38:27,651 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.0.0.100:9092.
+2017-10-10 11:39:01,580 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:178] ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [10.33.4.238:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-10-10 11:39:01,746 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bufferpool-wait-time
+2017-10-10 11:39:01,761 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name buffer-exhausted-records
+2017-10-10 11:39:01,767 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 1 to Cluster(nodes = [10.33.4.238:9092 (id: -1 rack: null)], partitions = [])
+2017-10-10 11:39:02,004 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-closed:
+2017-10-10 11:39:02,005 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-created:
+2017-10-10 11:39:02,005 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent-received:
+2017-10-10 11:39:02,006 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent:
+2017-10-10 11:39:02,011 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-received:
+2017-10-10 11:39:02,012 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name select-time:
+2017-10-10 11:39:02,013 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name io-time:
+2017-10-10 11:39:02,027 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name batch-size
+2017-10-10 11:39:02,029 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name compression-rate
+2017-10-10 11:39:02,030 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name queue-time
+2017-10-10 11:39:02,031 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name request-time
+2017-10-10 11:39:02,032 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name produce-throttle-time
+2017-10-10 11:39:02,033 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-per-request
+2017-10-10 11:39:02,034 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name record-retries
+2017-10-10 11:39:02,035 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name errors
+2017-10-10 11:39:02,036 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name record-size-max
+2017-10-10 11:39:02,044 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.p.i.Sender [Sender.java:129] Starting Kafka producer I/O thread.
+2017-10-10 11:39:02,045 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:178] ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [10.33.4.238:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = producer-1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-10-10 11:39:02,056 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:83] Kafka version : 0.10.0.0
+2017-10-10 11:39:02,057 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:84] Kafka commitId : b8642491e78c5a13
+2017-10-10 11:39:02,058 DEBUG [main] o.a.k.c.p.KafkaProducer [KafkaProducer.java:329] Kafka producer started
+2017-10-10 11:39:19,279 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:644] Initialize connection to node -1 for sending metadata request
+2017-10-10 11:39:19,280 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.238:9092.
+2017-10-10 11:39:40,289 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-sent
+2017-10-10 11:39:40,293 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-received
+2017-10-10 11:39:40,295 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.latency
+2017-10-10 11:39:40,312 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.n.Selector [Selector.java:345] Connection with /10.33.4.238 disconnected
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_144]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_144]
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:51) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:73) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:309) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:283) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:229) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:134) [kafka-clients-0.10.0.0.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+2017-10-10 11:39:40,314 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:463] Node -1 disconnected.
+2017-10-10 11:39:40,319 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:625] Give up sending metadata request since no node is available
+2017-10-10 11:39:40,419 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:644] Initialize connection to node -1 for sending metadata request
+2017-10-10 11:39:40,420 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.238:9092.
+2017-10-10 11:40:01,433 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.n.Selector [Selector.java:345] Connection with /10.33.4.238 disconnected
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_144]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_144]
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:51) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:73) ~[kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:309) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:283) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:260) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:229) [kafka-clients-0.10.0.0.jar:na]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:134) [kafka-clients-0.10.0.0.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+2017-10-10 11:40:01,434 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:463] Node -1 disconnected.
+2017-10-10 11:40:01,523 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:644] Initialize connection to node -1 for sending metadata request
+2017-10-10 11:40:01,524 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.238:9092.
+2017-10-10 17:36:59,462 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:178] ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [10.33.4.238:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-10-10 17:37:00,175 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bufferpool-wait-time
+2017-10-10 17:37:00,192 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name buffer-exhausted-records
+2017-10-10 17:37:00,197 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 1 to Cluster(nodes = [10.33.4.238:9092 (id: -1 rack: null)], partitions = [])
+2017-10-10 17:37:00,539 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-closed:
+2017-10-10 17:37:00,542 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-created:
+2017-10-10 17:37:00,542 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent-received:
+2017-10-10 17:37:00,542 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent:
+2017-10-10 17:37:00,547 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-received:
+2017-10-10 17:37:00,549 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name select-time:
+2017-10-10 17:37:00,549 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name io-time:
+2017-10-10 17:37:00,564 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name batch-size
+2017-10-10 17:37:00,564 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name compression-rate
+2017-10-10 17:37:00,567 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name queue-time
+2017-10-10 17:37:00,567 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name request-time
+2017-10-10 17:37:00,569 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name produce-throttle-time
+2017-10-10 17:37:00,569 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-per-request
+2017-10-10 17:37:00,569 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name record-retries
+2017-10-10 17:37:00,572 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name errors
+2017-10-10 17:37:00,572 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name record-size-max
+2017-10-10 17:37:00,579 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.p.i.Sender [Sender.java:129] Starting Kafka producer I/O thread.
+2017-10-10 17:37:00,579 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:178] ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [10.33.4.238:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = producer-1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-10-10 17:37:00,592 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:83] Kafka version : 0.10.0.0
+2017-10-10 17:37:00,592 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:84] Kafka commitId : b8642491e78c5a13
+2017-10-10 17:37:00,604 DEBUG [main] o.a.k.c.p.KafkaProducer [KafkaProducer.java:329] Kafka producer started
+2017-10-10 17:37:04,138 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:644] Initialize connection to node -1 for sending metadata request
+2017-10-10 17:37:04,138 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.238:9092.
+2017-10-10 17:37:04,158 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-sent
+2017-10-10 17:37:04,160 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-received
+2017-10-10 17:37:04,163 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.latency
+2017-10-10 17:37:04,163 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node -1
+2017-10-10 17:37:04,220 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:640] Sending metadata request {topics=[kafkatopic]} to node -1
+2017-10-10 17:37:04,256 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 2 to Cluster(nodes = [10.33.4.240:9092 (id: 3 rack: null), 10.33.4.238:9092 (id: 0 rack: null)], partitions = [Partition(topic = kafkatopic, partition = 0, leader = 0, replicas = [0,], isr = [0,]])
+2017-10-10 17:37:05,404 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 0 at 10.33.4.238:9092.
+2017-10-10 17:37:06,068 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-0.bytes-sent
+2017-10-10 17:37:07,059 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-0.bytes-received
+2017-10-10 17:37:07,467 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-0.latency
+2017-10-10 17:37:07,874 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 0
+2017-10-10 17:37:08,323 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.kafkatopic.records-per-batch
+2017-10-10 17:37:08,710 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.kafkatopic.bytes
+2017-10-10 17:37:08,713 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.kafkatopic.compression-rate
+2017-10-10 17:37:09,113 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.kafkatopic.record-retries
+2017-10-10 17:37:09,569 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.kafkatopic.record-errors
+2017-10-10 17:38:23,649 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.238:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 1000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = 
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+2017-10-10 17:38:23,656 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:597] Starting the Kafka consumer
+2017-10-10 17:38:23,811 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 1 to Cluster(nodes = [10.33.4.238:9092 (id: -1 rack: null)], partitions = [])
+2017-10-10 17:38:24,063 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-closed:
+2017-10-10 17:38:24,068 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-created:
+2017-10-10 17:38:24,071 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent-received:
+2017-10-10 17:38:24,071 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent:
+2017-10-10 17:38:24,076 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-received:
+2017-10-10 17:38:24,076 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name select-time:
+2017-10-10 17:38:24,078 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name io-time:
+2017-10-10 17:38:24,101 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.238:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = consumer-1
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 1000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = 
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+2017-10-10 17:38:24,156 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name heartbeat-latency
+2017-10-10 17:38:24,156 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name join-latency
+2017-10-10 17:38:24,158 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name sync-latency
+2017-10-10 17:38:24,173 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name commit-latency
+2017-10-10 17:38:24,198 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-fetched
+2017-10-10 17:38:24,198 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-fetched
+2017-10-10 17:38:24,201 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-latency
+2017-10-10 17:38:24,201 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-lag
+2017-10-10 17:38:24,201 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-throttle-time
+2017-10-10 17:38:24,211 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:83] Kafka version : 0.10.0.0
+2017-10-10 17:38:24,213 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:84] Kafka commitId : b8642491e78c5a13
+2017-10-10 17:38:24,213 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:696] Kafka consumer created
+2017-10-10 17:38:25,382 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:802] Subscribed to topic(s): kafkatopic
+2017-10-10 17:38:26,708 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:476] Sending coordinator request for group  to broker 10.33.4.238:9092 (id: -1 rack: null)
+2017-10-10 17:38:26,823 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.238:9092.
+2017-10-10 17:38:26,838 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-sent
+2017-10-10 17:38:26,841 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-received
+2017-10-10 17:38:26,841 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.latency
+2017-10-10 17:38:26,843 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node -1
+2017-10-10 17:38:26,843 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 17:38:26,933 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:640] Sending metadata request {topics=[kafkatopic]} to node -1
+2017-10-10 17:38:27,028 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 2 to Cluster(nodes = [10.33.4.240:9092 (id: 3 rack: null), 10.33.4.238:9092 (id: 0 rack: null)], partitions = [Partition(topic = kafkatopic, partition = 0, leader = 0, replicas = [0,], isr = [0,]])
+2017-10-10 17:38:27,030 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group  since the coordinator is unknown
+2017-10-10 17:38:27,035 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:489] Received group coordinator response ClientResponse(receivedTimeMs=1507628307033, disconnected=false, request=ClientRequest(expectResponse=true, callback=org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient$RequestFutureCompletionHandler@1530c739, request=RequestSend(header={api_key=10,api_version=0,correlation_id=0,client_id=consumer-1}, body={group_id=}), createdTimeMs=1507628306808, sendTimeMs=1507628306935), responseBody={error_code=0,coordinator={node_id=3,host=10.33.4.240,port=9092}})
+2017-10-10 17:38:27,035 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] Discovered coordinator 10.33.4.240:9092 (id: 2147483644 rack: null) for group .
+2017-10-10 17:38:27,035 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 2147483644 at 10.33.4.240:9092.
+2017-10-10 17:38:27,035 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:280] Revoking previously assigned partitions [] for group 
+2017-10-10 17:38:27,038 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:326] (Re-)joining group 
+2017-10-10 17:38:27,050 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:334] Sending JoinGroup ({group_id=,session_timeout=30000,member_id=,protocol_type=consumer,group_protocols=[{protocol_name=range,protocol_metadata=java.nio.HeapByteBuffer[pos=0 lim=22 cap=22]}]}) to coordinator 10.33.4.240:9092 (id: 2147483644 rack: null)
+2017-10-10 17:38:27,053 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483644.bytes-sent
+2017-10-10 17:38:27,055 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483644.bytes-received
+2017-10-10 17:38:27,055 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483644.latency
+2017-10-10 17:38:27,058 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 2147483644
+2017-10-10 17:38:27,063 ERROR [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:382] Attempt to join group  failed due to fatal error: The configured groupId is invalid
+2017-10-10 17:39:19,715 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.238:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 1000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = test
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+2017-10-10 17:39:19,723 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:597] Starting the Kafka consumer
+2017-10-10 17:39:19,873 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 1 to Cluster(nodes = [10.33.4.238:9092 (id: -1 rack: null)], partitions = [])
+2017-10-10 17:39:20,122 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-closed:
+2017-10-10 17:39:20,124 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-created:
+2017-10-10 17:39:20,127 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent-received:
+2017-10-10 17:39:20,127 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent:
+2017-10-10 17:39:20,132 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-received:
+2017-10-10 17:39:20,132 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name select-time:
+2017-10-10 17:39:20,134 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name io-time:
+2017-10-10 17:39:20,157 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.238:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = consumer-1
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 1000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = test
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+2017-10-10 17:39:20,209 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name heartbeat-latency
+2017-10-10 17:39:20,212 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name join-latency
+2017-10-10 17:39:20,212 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name sync-latency
+2017-10-10 17:39:20,224 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name commit-latency
+2017-10-10 17:39:20,249 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-fetched
+2017-10-10 17:39:20,252 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-fetched
+2017-10-10 17:39:20,252 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-latency
+2017-10-10 17:39:20,254 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-lag
+2017-10-10 17:39:20,254 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-throttle-time
+2017-10-10 17:39:20,262 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:83] Kafka version : 0.10.0.0
+2017-10-10 17:39:20,264 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:84] Kafka commitId : b8642491e78c5a13
+2017-10-10 17:39:20,264 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:696] Kafka consumer created
+2017-10-10 17:39:34,787 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:802] Subscribed to topic(s): kafkatopic
+2017-10-10 17:39:35,729 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:476] Sending coordinator request for group test to broker 10.33.4.238:9092 (id: -1 rack: null)
+2017-10-10 17:39:35,862 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.238:9092.
+2017-10-10 17:39:35,884 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-sent
+2017-10-10 17:39:35,886 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-received
+2017-10-10 17:39:35,889 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.latency
+2017-10-10 17:39:35,891 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node -1
+2017-10-10 17:39:35,891 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group test since the coordinator is unknown
+2017-10-10 17:39:35,969 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:640] Sending metadata request {topics=[kafkatopic]} to node -1
+2017-10-10 17:39:36,074 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 2 to Cluster(nodes = [10.33.4.240:9092 (id: 3 rack: null), 10.33.4.238:9092 (id: 0 rack: null)], partitions = [Partition(topic = kafkatopic, partition = 0, leader = 0, replicas = [0,], isr = [0,]])
+2017-10-10 17:39:36,076 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group test since the coordinator is unknown
+2017-10-10 17:39:36,079 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:489] Received group coordinator response ClientResponse(receivedTimeMs=1507628376076, disconnected=false, request=ClientRequest(expectResponse=true, callback=org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient$RequestFutureCompletionHandler@1530c739, request=RequestSend(header={api_key=10,api_version=0,correlation_id=0,client_id=consumer-1}, body={group_id=test}), createdTimeMs=1507628375839, sendTimeMs=1507628375971), responseBody={error_code=0,coordinator={node_id=3,host=10.33.4.240,port=9092}})
+2017-10-10 17:39:36,079 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] Discovered coordinator 10.33.4.240:9092 (id: 2147483644 rack: null) for group test.
+2017-10-10 17:39:36,081 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 2147483644 at 10.33.4.240:9092.
+2017-10-10 17:39:36,081 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:280] Revoking previously assigned partitions [] for group test
+2017-10-10 17:39:36,081 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:326] (Re-)joining group test
+2017-10-10 17:39:36,094 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:334] Sending JoinGroup ({group_id=test,session_timeout=30000,member_id=,protocol_type=consumer,group_protocols=[{protocol_name=range,protocol_metadata=java.nio.HeapByteBuffer[pos=0 lim=22 cap=22]}]}) to coordinator 10.33.4.240:9092 (id: 2147483644 rack: null)
+2017-10-10 17:39:36,099 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483644.bytes-sent
+2017-10-10 17:39:36,099 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483644.bytes-received
+2017-10-10 17:39:36,099 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483644.latency
+2017-10-10 17:39:36,101 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 2147483644
+2017-10-10 17:39:36,124 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:351] Received successful join group response for group test: {error_code=0,generation_id=1,group_protocol=range,leader_id=consumer-1-64356aab-f2ee-41b0-8d82-ce7b0dac18dc,member_id=consumer-1-64356aab-f2ee-41b0-8d82-ce7b0dac18dc,members=[{member_id=consumer-1-64356aab-f2ee-41b0-8d82-ce7b0dac18dc,member_metadata=java.nio.HeapByteBuffer[pos=0 lim=22 cap=22]}]}
+2017-10-10 17:39:36,126 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:257] Performing assignment for group test using strategy range with subscriptions {consumer-1-64356aab-f2ee-41b0-8d82-ce7b0dac18dc=Subscription(topics=[kafkatopic])}
+2017-10-10 17:39:36,129 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:262] Finished assignment for group test: {consumer-1-64356aab-f2ee-41b0-8d82-ce7b0dac18dc=Assignment(partitions=[kafkatopic-0])}
+2017-10-10 17:39:36,131 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:408] Sending leader SyncGroup for group test to coordinator 10.33.4.240:9092 (id: 2147483644 rack: null): {group_id=test,generation_id=1,member_id=consumer-1-64356aab-f2ee-41b0-8d82-ce7b0dac18dc,group_assignment=[{member_id=consumer-1-64356aab-f2ee-41b0-8d82-ce7b0dac18dc,member_assignment=java.nio.HeapByteBuffer[pos=0 lim=30 cap=30]}]}
+2017-10-10 17:39:36,251 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:434] Successfully joined group test with generation 1
+2017-10-10 17:39:36,253 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:219] Setting newly assigned partitions [kafkatopic-0] for group test
+2017-10-10 17:39:36,263 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:612] Group test fetching committed offsets for partitions: [kafkatopic-0]
+2017-10-10 17:39:36,276 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:658] Group test has no committed offset for partition kafkatopic-0
+2017-10-10 17:39:36,276 DEBUG [main] o.a.k.c.c.i.Fetcher [Fetcher.java:293] Resetting offset for partition kafkatopic-0 to latest offset.
+2017-10-10 17:39:36,281 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 0 at 10.33.4.238:9092.
+2017-10-10 17:39:36,281 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-0.bytes-sent
+2017-10-10 17:39:36,283 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-0.bytes-received
+2017-10-10 17:39:36,283 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-0.latency
+2017-10-10 17:39:36,286 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 0
+2017-10-10 17:39:36,288 DEBUG [main] o.a.k.c.c.i.Fetcher [Fetcher.java:499] Fetched offset 100 for partition kafkatopic-0
+2017-10-10 17:39:45,952 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.kafkatopic.bytes-fetched
+2017-10-10 17:39:45,955 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.kafkatopic.records-fetched
+2017-10-10 17:39:45,957 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:39:45,964 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:39:45,972 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group test
+2017-10-10 17:39:56,348 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:39:56,358 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:39:56,363 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group test
+2017-10-10 17:39:57,352 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:39:57,362 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:39:58,354 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:39:58,376 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:39:59,323 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group test
+2017-10-10 17:39:59,338 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:39:59,365 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:00,354 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:00,362 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:01,357 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:01,367 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:02,324 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group test
+2017-10-10 17:40:02,356 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:02,366 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:03,361 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:03,379 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:04,420 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:04,428 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:05,325 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group test
+2017-10-10 17:40:05,360 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:05,370 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:06,369 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:06,384 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:07,371 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:07,381 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:08,325 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group test
+2017-10-10 17:40:08,345 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:08,367 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:09,383 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:09,396 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:10,365 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:10,372 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:11,326 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group test
+2017-10-10 17:40:11,351 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:11,374 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:12,370 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:12,380 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:13,375 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:13,380 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:14,329 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group test
+2017-10-10 17:40:14,359 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:14,379 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:15,371 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:15,376 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:16,355 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:16,383 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:17,329 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group test
+2017-10-10 17:40:17,359 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
+2017-10-10 17:40:17,402 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group test committed offset 100 for partition kafkatopic-0
