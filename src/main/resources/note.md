@@ -40,3 +40,5 @@ http://zqhxuyuan.github.io/2016/02/20/Kafka-Consumer-New/
 
 
 http://blog.csdn.net/u010003835/article/details/52235572
+
+JMX_PORT=2898 bin/kafka-server-start.sh -daemon config/server1.properties
