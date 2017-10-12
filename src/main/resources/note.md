@@ -42,3 +42,24 @@ http://zqhxuyuan.github.io/2016/02/20/Kafka-Consumer-New/
 http://blog.csdn.net/u010003835/article/details/52235572
 
 JMX_PORT=2898 bin/kafka-server-start.sh -daemon config/server1.properties
+
+
+flume
+http://www.51studyit.com/html/notes/20140506/128.html
+https://birdben.github.io/2016/08/24/Flume/Flume%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%89%EF%BC%89Flume%E5%A4%9A%E4%B8%AAAgent%E6%9E%B6%E6%9E%84/
+
+mananger
+
+conf/application.conf
+play.http.context修改为"/kafka"
+kafka-manager.zkhosts修改为"zk的ip:2181/kafka"
+basicAuthentication.password修改为"elog"
+运行
+nohup bin/kafka-manager -Dconfig.file=conf/application.conf -Dhttp.port=8080 &
+
+
+supervisor 启动
+
+
+https://tech.youzan.com/you-zan-tong-ri-zhi-ping-tai-chu-tan/
+

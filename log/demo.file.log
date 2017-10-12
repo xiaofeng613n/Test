@@ -12346,3 +12346,1498 @@ org.apache.kafka.common.errors.DisconnectException: null
 2017-10-11 17:52:33,131 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:315] Removed sensor with name node-2.latency
 2017-10-11 17:52:33,131 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.p.i.Sender [Sender.java:163] Shutdown of Kafka producer I/O thread has completed.
 2017-10-11 17:52:33,131 DEBUG [main] o.a.k.c.p.KafkaProducer [KafkaProducer.java:700] The Kafka producer has closed.
+2017-10-12 09:00:41,724 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.231:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = groupA
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = earliest
+
+2017-10-12 09:00:41,756 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:597] Starting the Kafka consumer
+2017-10-12 09:00:41,840 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 1 to Cluster(nodes = [10.33.4.231:9092 (id: -1 rack: null)], partitions = [])
+2017-10-12 09:00:41,978 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-closed:
+2017-10-12 09:00:41,979 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-created:
+2017-10-12 09:00:41,979 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent-received:
+2017-10-12 09:00:41,979 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent:
+2017-10-12 09:00:41,981 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-received:
+2017-10-12 09:00:41,981 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name select-time:
+2017-10-12 09:00:41,981 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name io-time:
+2017-10-12 09:00:41,989 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.231:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = consumer-1
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = groupA
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = earliest
+
+2017-10-12 09:00:42,004 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name heartbeat-latency
+2017-10-12 09:00:42,004 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name join-latency
+2017-10-12 09:00:42,005 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name sync-latency
+2017-10-12 09:00:42,008 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name commit-latency
+2017-10-12 09:00:42,014 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-fetched
+2017-10-12 09:00:42,014 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-fetched
+2017-10-12 09:00:42,014 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-latency
+2017-10-12 09:00:42,015 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-lag
+2017-10-12 09:00:42,015 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-throttle-time
+2017-10-12 09:00:42,018 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:83] Kafka version : 0.10.0.0
+2017-10-12 09:00:42,018 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:84] Kafka commitId : b8642491e78c5a13
+2017-10-12 09:00:42,019 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:696] Kafka consumer created
+2017-10-12 09:00:42,020 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:802] Subscribed to topic(s): tp1
+2017-10-12 09:00:52,970 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:476] Sending coordinator request for group groupA to broker 10.33.4.231:9092 (id: -1 rack: null)
+2017-10-12 09:00:53,035 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.231:9092.
+2017-10-12 09:00:53,052 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-sent
+2017-10-12 09:00:53,055 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-received
+2017-10-12 09:00:53,057 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.latency
+2017-10-12 09:00:53,060 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node -1
+2017-10-12 09:00:53,060 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group groupA since the coordinator is unknown
+2017-10-12 09:00:53,137 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:640] Sending metadata request {topics=[tp1]} to node -1
+2017-10-12 09:00:53,162 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group groupA since the coordinator is unknown
+2017-10-12 09:00:53,285 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 2 to Cluster(nodes = [10.33.4.231:9091 (id: 1 rack: null), 10.33.4.231:9093 (id: 3 rack: null), 10.33.4.231:9092 (id: 2 rack: null)], partitions = [Partition(topic = tp1, partition = 0, leader = 2, replicas = [1,2,], isr = [1,2,]])
+2017-10-12 09:00:53,287 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group groupA since the coordinator is unknown
+2017-10-12 09:00:53,290 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:489] Received group coordinator response ClientResponse(receivedTimeMs=1507770053290, disconnected=false, request=ClientRequest(expectResponse=true, callback=org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient$RequestFutureCompletionHandler@5dafbe45, request=RequestSend(header={api_key=10,api_version=0,correlation_id=0,client_id=consumer-1}, body={group_id=groupA}), createdTimeMs=1507770053020, sendTimeMs=1507770053137), responseBody={error_code=0,coordinator={node_id=1,host=10.33.4.231,port=9091}})
+2017-10-12 09:00:53,292 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] Discovered coordinator 10.33.4.231:9091 (id: 2147483646 rack: null) for group groupA.
+2017-10-12 09:00:53,292 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 2147483646 at 10.33.4.231:9091.
+2017-10-12 09:00:53,292 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:280] Revoking previously assigned partitions [] for group groupA
+2017-10-12 09:00:53,292 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:326] (Re-)joining group groupA
+2017-10-12 09:00:53,300 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:334] Sending JoinGroup ({group_id=groupA,session_timeout=30000,member_id=,protocol_type=consumer,group_protocols=[{protocol_name=range,protocol_metadata=java.nio.HeapByteBuffer[pos=0 lim=15 cap=15]}]}) to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null)
+2017-10-12 09:00:53,305 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.bytes-sent
+2017-10-12 09:00:53,305 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.bytes-received
+2017-10-12 09:00:53,305 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.latency
+2017-10-12 09:00:53,307 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 2147483646
+2017-10-12 09:00:53,365 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:351] Received successful join group response for group groupA: {error_code=0,generation_id=1,group_protocol=range,leader_id=consumer-1-fb55b2d4-2947-4056-a8b1-95459fc41ac2,member_id=consumer-1-fb55b2d4-2947-4056-a8b1-95459fc41ac2,members=[{member_id=consumer-1-fb55b2d4-2947-4056-a8b1-95459fc41ac2,member_metadata=java.nio.HeapByteBuffer[pos=0 lim=15 cap=15]}]}
+2017-10-12 09:00:53,365 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:257] Performing assignment for group groupA using strategy range with subscriptions {consumer-1-fb55b2d4-2947-4056-a8b1-95459fc41ac2=Subscription(topics=[tp1])}
+2017-10-12 09:00:53,367 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:262] Finished assignment for group groupA: {consumer-1-fb55b2d4-2947-4056-a8b1-95459fc41ac2=Assignment(partitions=[tp1-0])}
+2017-10-12 09:00:53,370 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:408] Sending leader SyncGroup for group groupA to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null): {group_id=groupA,generation_id=1,member_id=consumer-1-fb55b2d4-2947-4056-a8b1-95459fc41ac2,group_assignment=[{member_id=consumer-1-fb55b2d4-2947-4056-a8b1-95459fc41ac2,member_assignment=java.nio.HeapByteBuffer[pos=0 lim=23 cap=23]}]}
+2017-10-12 09:00:53,535 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:434] Successfully joined group groupA with generation 1
+2017-10-12 09:00:53,540 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:219] Setting newly assigned partitions [tp1-0] for group groupA
+2017-10-12 09:00:53,542 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:612] Group groupA fetching committed offsets for partitions: [tp1-0]
+2017-10-12 09:00:53,565 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:658] Group groupA has no committed offset for partition tp1-0
+2017-10-12 09:00:53,567 DEBUG [main] o.a.k.c.c.i.Fetcher [Fetcher.java:293] Resetting offset for partition tp1-0 to earliest offset.
+2017-10-12 09:00:53,575 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 2 at 10.33.4.231:9092.
+2017-10-12 09:00:53,577 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.bytes-sent
+2017-10-12 09:00:53,580 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.bytes-received
+2017-10-12 09:00:53,582 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.latency
+2017-10-12 09:00:53,585 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 2
+2017-10-12 09:00:53,590 DEBUG [main] o.a.k.c.c.i.Fetcher [Fetcher.java:499] Fetched offset 0 for partition tp1-0
+2017-10-12 09:00:56,749 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.tp1.bytes-fetched
+2017-10-12 09:00:56,750 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.tp1.records-fetched
+2017-10-12 09:00:56,753 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupA
+2017-10-12 09:01:28,607 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:542] Marking the coordinator 10.33.4.231:9091 (id: 2147483646 rack: null) dead for group groupA
+2017-10-12 09:01:28,607 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:476] Sending coordinator request for group groupA to broker 10.33.4.231:9091 (id: 1 rack: null)
+2017-10-12 09:01:28,607 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 1 at 10.33.4.231:9091.
+2017-10-12 09:01:28,610 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-1.bytes-sent
+2017-10-12 09:01:28,610 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-1.bytes-received
+2017-10-12 09:01:28,610 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-1.latency
+2017-10-12 09:01:28,610 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 1
+2017-10-12 09:01:28,637 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:576] Offset commit for group groupA failed: The coordinator is not aware of this member.
+2017-10-12 09:01:28,637 WARN [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:454] Auto offset commit failed for group groupA: Commit cannot be completed since the group has already rebalanced and assigned the partitions to another member. This means that the time between subsequent calls to poll() was longer than the configured session.timeout.ms, which typically implies that the poll loop is spending too much time message processing. You can address this either by increasing the session timeout or by reducing the maximum size of batches returned in poll() with max.poll.records.
+2017-10-12 09:01:28,637 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:489] Received group coordinator response ClientResponse(receivedTimeMs=1507770088637, disconnected=false, request=ClientRequest(expectResponse=true, callback=org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient$RequestFutureCompletionHandler@3cce57c7, request=RequestSend(header={api_key=10,api_version=0,correlation_id=12,client_id=consumer-1}, body={group_id=groupA}), createdTimeMs=1507770088607, sendTimeMs=1507770088610), responseBody={error_code=0,coordinator={node_id=1,host=10.33.4.231,port=9091}})
+2017-10-12 09:01:28,637 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] Discovered coordinator 10.33.4.231:9091 (id: 2147483646 rack: null) for group groupA.
+2017-10-12 09:01:28,637 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:576] Offset commit for group groupA failed: The coordinator is not aware of this member.
+2017-10-12 09:01:28,640 WARN [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:454] Auto offset commit failed for group groupA: Commit cannot be completed since the group has already rebalanced and assigned the partitions to another member. This means that the time between subsequent calls to poll() was longer than the configured session.timeout.ms, which typically implies that the poll loop is spending too much time message processing. You can address this either by increasing the session timeout or by reducing the maximum size of batches returned in poll() with max.poll.records.
+2017-10-12 09:01:28,640 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:576] Offset commit for group groupA failed: The coordinator is not aware of this member.
+2017-10-12 09:01:28,640 WARN [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:471] Auto offset commit failed for group groupA: Commit cannot be completed since the group has already rebalanced and assigned the partitions to another member. This means that the time between subsequent calls to poll() was longer than the configured session.timeout.ms, which typically implies that the poll loop is spending too much time message processing. You can address this either by increasing the session timeout or by reducing the maximum size of batches returned in poll() with max.poll.records.
+2017-10-12 09:01:28,640 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:280] Revoking previously assigned partitions [tp1-0] for group groupA
+2017-10-12 09:01:28,640 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:326] (Re-)joining group groupA
+2017-10-12 09:01:28,640 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:334] Sending JoinGroup ({group_id=groupA,session_timeout=30000,member_id=consumer-1-fb55b2d4-2947-4056-a8b1-95459fc41ac2,protocol_type=consumer,group_protocols=[{protocol_name=range,protocol_metadata=java.nio.HeapByteBuffer[pos=0 lim=15 cap=15]}]}) to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null)
+2017-10-12 09:01:28,642 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:370] Attempt to join group groupA failed due to unknown member id.
+2017-10-12 09:01:28,642 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:326] (Re-)joining group groupA
+2017-10-12 09:01:28,642 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:334] Sending JoinGroup ({group_id=groupA,session_timeout=30000,member_id=,protocol_type=consumer,group_protocols=[{protocol_name=range,protocol_metadata=java.nio.HeapByteBuffer[pos=0 lim=15 cap=15]}]}) to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null)
+2017-10-12 09:01:28,645 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:351] Received successful join group response for group groupA: {error_code=0,generation_id=3,group_protocol=range,leader_id=consumer-1-68dd57e4-db35-4a54-b022-71650cd888df,member_id=consumer-1-68dd57e4-db35-4a54-b022-71650cd888df,members=[{member_id=consumer-1-68dd57e4-db35-4a54-b022-71650cd888df,member_metadata=java.nio.HeapByteBuffer[pos=0 lim=15 cap=15]}]}
+2017-10-12 09:01:28,645 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:257] Performing assignment for group groupA using strategy range with subscriptions {consumer-1-68dd57e4-db35-4a54-b022-71650cd888df=Subscription(topics=[tp1])}
+2017-10-12 09:01:28,645 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:262] Finished assignment for group groupA: {consumer-1-68dd57e4-db35-4a54-b022-71650cd888df=Assignment(partitions=[tp1-0])}
+2017-10-12 09:01:28,645 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:408] Sending leader SyncGroup for group groupA to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null): {group_id=groupA,generation_id=3,member_id=consumer-1-68dd57e4-db35-4a54-b022-71650cd888df,group_assignment=[{member_id=consumer-1-68dd57e4-db35-4a54-b022-71650cd888df,member_assignment=java.nio.HeapByteBuffer[pos=0 lim=23 cap=23]}]}
+2017-10-12 09:01:28,647 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:434] Successfully joined group groupA with generation 3
+2017-10-12 09:01:28,647 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:219] Setting newly assigned partitions [tp1-0] for group groupA
+2017-10-12 09:01:28,647 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:612] Group groupA fetching committed offsets for partitions: [tp1-0]
+2017-10-12 09:01:28,650 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:658] Group groupA has no committed offset for partition tp1-0
+2017-10-12 09:01:28,650 DEBUG [main] o.a.k.c.c.i.Fetcher [Fetcher.java:293] Resetting offset for partition tp1-0 to earliest offset.
+2017-10-12 09:01:29,110 DEBUG [main] o.a.k.c.c.i.Fetcher [Fetcher.java:572] Ignoring fetched records for partition tp1-0 since it is no longer fetchable
+2017-10-12 09:01:29,110 DEBUG [main] o.a.k.c.c.i.Fetcher [Fetcher.java:499] Fetched offset 0 for partition tp1-0
+2017-10-12 09:01:31,649 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupA
+2017-10-12 09:01:33,614 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupA committed offset 300 for partition tp1-0
+2017-10-12 09:01:33,621 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupA committed offset 300 for partition tp1-0
+2017-10-12 09:01:33,649 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupA committed offset 300 for partition tp1-0
+2017-10-12 09:01:34,651 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupA
+2017-10-12 09:02:00,487 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.231:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = groupB
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+2017-10-12 09:02:00,492 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:597] Starting the Kafka consumer
+2017-10-12 09:02:00,557 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 1 to Cluster(nodes = [10.33.4.231:9092 (id: -1 rack: null)], partitions = [])
+2017-10-12 09:02:00,682 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-closed:
+2017-10-12 09:02:00,684 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-created:
+2017-10-12 09:02:00,684 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent-received:
+2017-10-12 09:02:00,684 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent:
+2017-10-12 09:02:00,684 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-received:
+2017-10-12 09:02:00,684 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name select-time:
+2017-10-12 09:02:00,687 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name io-time:
+2017-10-12 09:02:00,692 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.231:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = consumer-1
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = groupB
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+2017-10-12 09:02:00,704 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name heartbeat-latency
+2017-10-12 09:02:00,704 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name join-latency
+2017-10-12 09:02:00,704 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name sync-latency
+2017-10-12 09:02:00,709 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name commit-latency
+2017-10-12 09:02:00,714 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-fetched
+2017-10-12 09:02:00,714 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-fetched
+2017-10-12 09:02:00,714 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-latency
+2017-10-12 09:02:00,714 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-lag
+2017-10-12 09:02:00,714 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-throttle-time
+2017-10-12 09:02:00,717 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:83] Kafka version : 0.10.0.0
+2017-10-12 09:02:00,719 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:84] Kafka commitId : b8642491e78c5a13
+2017-10-12 09:02:00,719 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:696] Kafka consumer created
+2017-10-12 09:02:00,719 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:802] Subscribed to topic(s): tp1
+2017-10-12 09:02:02,182 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:476] Sending coordinator request for group groupB to broker 10.33.4.231:9092 (id: -1 rack: null)
+2017-10-12 09:02:02,259 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.231:9092.
+2017-10-12 09:02:02,272 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-sent
+2017-10-12 09:02:02,274 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-received
+2017-10-12 09:02:02,274 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.latency
+2017-10-12 09:02:02,277 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node -1
+2017-10-12 09:02:02,367 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:640] Sending metadata request {topics=[tp1]} to node -1
+2017-10-12 09:02:02,457 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 2 to Cluster(nodes = [10.33.4.231:9093 (id: 3 rack: null), 10.33.4.231:9092 (id: 2 rack: null), 10.33.4.231:9091 (id: 1 rack: null)], partitions = [Partition(topic = tp1, partition = 0, leader = 2, replicas = [1,2,], isr = [1,2,]])
+2017-10-12 09:02:02,462 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:489] Received group coordinator response ClientResponse(receivedTimeMs=1507770122460, disconnected=false, request=ClientRequest(expectResponse=true, callback=org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient$RequestFutureCompletionHandler@5dafbe45, request=RequestSend(header={api_key=10,api_version=0,correlation_id=0,client_id=consumer-1}, body={group_id=groupB}), createdTimeMs=1507770122244, sendTimeMs=1507770122375), responseBody={error_code=0,coordinator={node_id=1,host=10.33.4.231,port=9091}})
+2017-10-12 09:02:02,462 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] Discovered coordinator 10.33.4.231:9091 (id: 2147483646 rack: null) for group groupB.
+2017-10-12 09:02:02,462 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 2147483646 at 10.33.4.231:9091.
+2017-10-12 09:02:02,465 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:280] Revoking previously assigned partitions [] for group groupB
+2017-10-12 09:02:02,465 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:326] (Re-)joining group groupB
+2017-10-12 09:02:02,472 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:334] Sending JoinGroup ({group_id=groupB,session_timeout=30000,member_id=,protocol_type=consumer,group_protocols=[{protocol_name=range,protocol_metadata=java.nio.HeapByteBuffer[pos=0 lim=15 cap=15]}]}) to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null)
+2017-10-12 09:02:02,475 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.bytes-sent
+2017-10-12 09:02:02,477 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.bytes-received
+2017-10-12 09:02:02,477 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.latency
+2017-10-12 09:02:02,477 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 2147483646
+2017-10-12 09:02:02,480 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:351] Received successful join group response for group groupB: {error_code=0,generation_id=1,group_protocol=range,leader_id=consumer-1-4155e2c1-960e-41fb-9d24-ccfdd945ae12,member_id=consumer-1-4155e2c1-960e-41fb-9d24-ccfdd945ae12,members=[{member_id=consumer-1-4155e2c1-960e-41fb-9d24-ccfdd945ae12,member_metadata=java.nio.HeapByteBuffer[pos=0 lim=15 cap=15]}]}
+2017-10-12 09:02:02,482 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:257] Performing assignment for group groupB using strategy range with subscriptions {consumer-1-4155e2c1-960e-41fb-9d24-ccfdd945ae12=Subscription(topics=[tp1])}
+2017-10-12 09:02:02,485 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:262] Finished assignment for group groupB: {consumer-1-4155e2c1-960e-41fb-9d24-ccfdd945ae12=Assignment(partitions=[tp1-0])}
+2017-10-12 09:02:02,487 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:408] Sending leader SyncGroup for group groupB to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null): {group_id=groupB,generation_id=1,member_id=consumer-1-4155e2c1-960e-41fb-9d24-ccfdd945ae12,group_assignment=[{member_id=consumer-1-4155e2c1-960e-41fb-9d24-ccfdd945ae12,member_assignment=java.nio.HeapByteBuffer[pos=0 lim=23 cap=23]}]}
+2017-10-12 09:02:02,492 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:434] Successfully joined group groupB with generation 1
+2017-10-12 09:02:02,495 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:219] Setting newly assigned partitions [tp1-0] for group groupB
+2017-10-12 09:02:02,495 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:612] Group groupB fetching committed offsets for partitions: [tp1-0]
+2017-10-12 09:02:02,502 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:658] Group groupB has no committed offset for partition tp1-0
+2017-10-12 09:02:02,502 DEBUG [main] o.a.k.c.c.i.Fetcher [Fetcher.java:293] Resetting offset for partition tp1-0 to latest offset.
+2017-10-12 09:02:02,507 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 2 at 10.33.4.231:9092.
+2017-10-12 09:02:02,507 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.bytes-sent
+2017-10-12 09:02:02,510 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.bytes-received
+2017-10-12 09:02:02,510 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.latency
+2017-10-12 09:02:02,512 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 2
+2017-10-12 09:02:02,515 DEBUG [main] o.a.k.c.c.i.Fetcher [Fetcher.java:499] Fetched offset 300 for partition tp1-0
+2017-10-12 09:02:09,597 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.tp1.bytes-fetched
+2017-10-12 09:02:09,600 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.tp1.records-fetched
+2017-10-12 09:02:09,602 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupB
+2017-10-12 09:02:09,605 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupB committed offset 300 for partition tp1-0
+2017-10-12 09:02:09,607 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupB committed offset 300 for partition tp1-0
+2017-10-12 09:02:13,405 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupB
+2017-10-12 09:02:20,294 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupB committed offset 300 for partition tp1-0
+2017-10-12 09:02:20,301 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupB committed offset 300 for partition tp1-0
+2017-10-12 09:02:20,304 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupB
+2017-10-12 09:02:23,296 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupB
+2017-10-12 09:02:38,486 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.231:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = groupB
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = earliest
+
+2017-10-12 09:02:38,489 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:597] Starting the Kafka consumer
+2017-10-12 09:02:38,546 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 1 to Cluster(nodes = [10.33.4.231:9092 (id: -1 rack: null)], partitions = [])
+2017-10-12 09:02:38,671 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-closed:
+2017-10-12 09:02:38,674 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-created:
+2017-10-12 09:02:38,674 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent-received:
+2017-10-12 09:02:38,674 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent:
+2017-10-12 09:02:38,674 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-received:
+2017-10-12 09:02:38,674 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name select-time:
+2017-10-12 09:02:38,674 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name io-time:
+2017-10-12 09:02:38,681 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.231:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = consumer-1
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = groupB
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = earliest
+
+2017-10-12 09:02:38,694 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name heartbeat-latency
+2017-10-12 09:02:38,694 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name join-latency
+2017-10-12 09:02:38,694 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name sync-latency
+2017-10-12 09:02:38,699 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name commit-latency
+2017-10-12 09:02:38,706 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-fetched
+2017-10-12 09:02:38,706 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-fetched
+2017-10-12 09:02:38,706 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-latency
+2017-10-12 09:02:38,706 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-lag
+2017-10-12 09:02:38,706 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-throttle-time
+2017-10-12 09:02:38,711 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:83] Kafka version : 0.10.0.0
+2017-10-12 09:02:38,711 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:84] Kafka commitId : b8642491e78c5a13
+2017-10-12 09:02:38,711 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:696] Kafka consumer created
+2017-10-12 09:02:38,714 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:802] Subscribed to topic(s): tp1
+2017-10-12 09:02:39,859 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:476] Sending coordinator request for group groupB to broker 10.33.4.231:9092 (id: -1 rack: null)
+2017-10-12 09:02:39,954 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.231:9092.
+2017-10-12 09:02:39,969 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-sent
+2017-10-12 09:02:39,969 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-received
+2017-10-12 09:02:39,971 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.latency
+2017-10-12 09:02:39,971 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node -1
+2017-10-12 09:02:40,061 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:640] Sending metadata request {topics=[tp1]} to node -1
+2017-10-12 09:02:40,166 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 2 to Cluster(nodes = [10.33.4.231:9093 (id: 3 rack: null), 10.33.4.231:9091 (id: 1 rack: null), 10.33.4.231:9092 (id: 2 rack: null)], partitions = [Partition(topic = tp1, partition = 0, leader = 2, replicas = [1,2,], isr = [1,2,]])
+2017-10-12 09:02:40,171 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:489] Received group coordinator response ClientResponse(receivedTimeMs=1507770160169, disconnected=false, request=ClientRequest(expectResponse=true, callback=org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient$RequestFutureCompletionHandler@5dafbe45, request=RequestSend(header={api_key=10,api_version=0,correlation_id=0,client_id=consumer-1}, body={group_id=groupB}), createdTimeMs=1507770159939, sendTimeMs=1507770160066), responseBody={error_code=0,coordinator={node_id=1,host=10.33.4.231,port=9091}})
+2017-10-12 09:02:40,171 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] Discovered coordinator 10.33.4.231:9091 (id: 2147483646 rack: null) for group groupB.
+2017-10-12 09:02:40,171 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 2147483646 at 10.33.4.231:9091.
+2017-10-12 09:02:40,171 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:280] Revoking previously assigned partitions [] for group groupB
+2017-10-12 09:02:40,174 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:326] (Re-)joining group groupB
+2017-10-12 09:02:40,181 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:334] Sending JoinGroup ({group_id=groupB,session_timeout=30000,member_id=,protocol_type=consumer,group_protocols=[{protocol_name=range,protocol_metadata=java.nio.HeapByteBuffer[pos=0 lim=15 cap=15]}]}) to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null)
+2017-10-12 09:02:40,184 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.bytes-sent
+2017-10-12 09:02:40,184 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.bytes-received
+2017-10-12 09:02:40,186 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.latency
+2017-10-12 09:02:40,186 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 2147483646
+2017-10-12 09:02:53,323 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:351] Received successful join group response for group groupB: {error_code=0,generation_id=2,group_protocol=range,leader_id=consumer-1-bd877dde-e1fa-4f0d-ba09-6806886c2061,member_id=consumer-1-bd877dde-e1fa-4f0d-ba09-6806886c2061,members=[{member_id=consumer-1-bd877dde-e1fa-4f0d-ba09-6806886c2061,member_metadata=java.nio.HeapByteBuffer[pos=0 lim=15 cap=15]}]}
+2017-10-12 09:02:53,328 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:257] Performing assignment for group groupB using strategy range with subscriptions {consumer-1-bd877dde-e1fa-4f0d-ba09-6806886c2061=Subscription(topics=[tp1])}
+2017-10-12 09:02:53,338 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:262] Finished assignment for group groupB: {consumer-1-bd877dde-e1fa-4f0d-ba09-6806886c2061=Assignment(partitions=[tp1-0])}
+2017-10-12 09:02:53,350 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:408] Sending leader SyncGroup for group groupB to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null): {group_id=groupB,generation_id=2,member_id=consumer-1-bd877dde-e1fa-4f0d-ba09-6806886c2061,group_assignment=[{member_id=consumer-1-bd877dde-e1fa-4f0d-ba09-6806886c2061,member_assignment=java.nio.HeapByteBuffer[pos=0 lim=23 cap=23]}]}
+2017-10-12 09:02:53,363 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:434] Successfully joined group groupB with generation 2
+2017-10-12 09:02:53,368 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:219] Setting newly assigned partitions [tp1-0] for group groupB
+2017-10-12 09:02:53,370 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:612] Group groupB fetching committed offsets for partitions: [tp1-0]
+2017-10-12 09:02:53,385 DEBUG [main] o.a.k.c.c.i.Fetcher [Fetcher.java:173] Resetting offset for partition tp1-0 to the committed offset 300
+2017-10-12 09:02:53,393 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 2 at 10.33.4.231:9092.
+2017-10-12 09:02:53,395 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.bytes-sent
+2017-10-12 09:02:53,395 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.bytes-received
+2017-10-12 09:02:53,398 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.latency
+2017-10-12 09:02:53,398 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 2
+2017-10-12 09:02:57,598 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupB committed offset 300 for partition tp1-0
+2017-10-12 09:02:57,598 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupB
+2017-10-12 09:02:59,131 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.tp1.bytes-fetched
+2017-10-12 09:02:59,133 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.tp1.records-fetched
+2017-10-12 09:02:59,138 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupB committed offset 300 for partition tp1-0
+2017-10-12 09:03:00,833 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupB
+2017-10-12 09:03:04,198 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupB committed offset 300 for partition tp1-0
+2017-10-12 09:03:04,198 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupB
+2017-10-12 09:03:04,198 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupB committed offset 300 for partition tp1-0
+2017-10-12 09:03:07,183 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupB
+2017-10-12 09:03:09,191 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupB committed offset 300 for partition tp1-0
+2017-10-12 09:03:09,194 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupB committed offset 300 for partition tp1-0
+2017-10-12 09:03:10,186 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupB
+2017-10-12 09:03:13,189 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupB
+2017-10-12 09:03:14,192 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupB committed offset 300 for partition tp1-0
+2017-10-12 09:03:14,199 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupB committed offset 300 for partition tp1-0
+2017-10-12 09:03:16,189 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupB
+2017-10-12 09:03:22,426 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.231:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = groupC
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = earliest
+
+2017-10-12 09:03:22,429 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:597] Starting the Kafka consumer
+2017-10-12 09:03:22,491 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 1 to Cluster(nodes = [10.33.4.231:9092 (id: -1 rack: null)], partitions = [])
+2017-10-12 09:03:22,621 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-closed:
+2017-10-12 09:03:22,621 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-created:
+2017-10-12 09:03:22,621 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent-received:
+2017-10-12 09:03:22,621 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent:
+2017-10-12 09:03:22,623 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-received:
+2017-10-12 09:03:22,623 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name select-time:
+2017-10-12 09:03:22,623 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name io-time:
+2017-10-12 09:03:22,631 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.231:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = consumer-1
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = groupC
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = earliest
+
+2017-10-12 09:03:22,646 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name heartbeat-latency
+2017-10-12 09:03:22,646 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name join-latency
+2017-10-12 09:03:22,646 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name sync-latency
+2017-10-12 09:03:22,648 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name commit-latency
+2017-10-12 09:03:22,656 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-fetched
+2017-10-12 09:03:22,656 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-fetched
+2017-10-12 09:03:22,656 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-latency
+2017-10-12 09:03:22,656 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-lag
+2017-10-12 09:03:22,656 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-throttle-time
+2017-10-12 09:03:22,658 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:83] Kafka version : 0.10.0.0
+2017-10-12 09:03:22,661 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:84] Kafka commitId : b8642491e78c5a13
+2017-10-12 09:03:22,661 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:696] Kafka consumer created
+2017-10-12 09:03:22,661 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:802] Subscribed to topic(s): tp1
+2017-10-12 09:03:24,033 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:476] Sending coordinator request for group groupC to broker 10.33.4.231:9092 (id: -1 rack: null)
+2017-10-12 09:03:24,123 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.231:9092.
+2017-10-12 09:03:24,138 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-sent
+2017-10-12 09:03:24,141 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-received
+2017-10-12 09:03:24,141 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.latency
+2017-10-12 09:03:24,143 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node -1
+2017-10-12 09:03:24,231 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:640] Sending metadata request {topics=[tp1]} to node -1
+2017-10-12 09:03:24,333 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 2 to Cluster(nodes = [10.33.4.231:9093 (id: 3 rack: null), 10.33.4.231:9092 (id: 2 rack: null), 10.33.4.231:9091 (id: 1 rack: null)], partitions = [Partition(topic = tp1, partition = 0, leader = 2, replicas = [1,2,], isr = [1,2,]])
+2017-10-12 09:03:24,338 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:489] Received group coordinator response ClientResponse(receivedTimeMs=1507770204336, disconnected=false, request=ClientRequest(expectResponse=true, callback=org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient$RequestFutureCompletionHandler@5dafbe45, request=RequestSend(header={api_key=10,api_version=0,correlation_id=0,client_id=consumer-1}, body={group_id=groupC}), createdTimeMs=1507770204111, sendTimeMs=1507770204253), responseBody={error_code=0,coordinator={node_id=1,host=10.33.4.231,port=9091}})
+2017-10-12 09:03:24,338 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] Discovered coordinator 10.33.4.231:9091 (id: 2147483646 rack: null) for group groupC.
+2017-10-12 09:03:24,338 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 2147483646 at 10.33.4.231:9091.
+2017-10-12 09:03:24,341 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:280] Revoking previously assigned partitions [] for group groupC
+2017-10-12 09:03:24,341 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:326] (Re-)joining group groupC
+2017-10-12 09:03:24,348 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:334] Sending JoinGroup ({group_id=groupC,session_timeout=30000,member_id=,protocol_type=consumer,group_protocols=[{protocol_name=range,protocol_metadata=java.nio.HeapByteBuffer[pos=0 lim=15 cap=15]}]}) to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null)
+2017-10-12 09:03:24,351 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.bytes-sent
+2017-10-12 09:03:24,353 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.bytes-received
+2017-10-12 09:03:24,353 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.latency
+2017-10-12 09:03:24,353 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 2147483646
+2017-10-12 09:03:24,358 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:351] Received successful join group response for group groupC: {error_code=0,generation_id=1,group_protocol=range,leader_id=consumer-1-690b7eea-07c2-48b6-a466-d48edb4b9683,member_id=consumer-1-690b7eea-07c2-48b6-a466-d48edb4b9683,members=[{member_id=consumer-1-690b7eea-07c2-48b6-a466-d48edb4b9683,member_metadata=java.nio.HeapByteBuffer[pos=0 lim=15 cap=15]}]}
+2017-10-12 09:03:24,358 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:257] Performing assignment for group groupC using strategy range with subscriptions {consumer-1-690b7eea-07c2-48b6-a466-d48edb4b9683=Subscription(topics=[tp1])}
+2017-10-12 09:03:24,361 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:262] Finished assignment for group groupC: {consumer-1-690b7eea-07c2-48b6-a466-d48edb4b9683=Assignment(partitions=[tp1-0])}
+2017-10-12 09:03:24,363 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:408] Sending leader SyncGroup for group groupC to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null): {group_id=groupC,generation_id=1,member_id=consumer-1-690b7eea-07c2-48b6-a466-d48edb4b9683,group_assignment=[{member_id=consumer-1-690b7eea-07c2-48b6-a466-d48edb4b9683,member_assignment=java.nio.HeapByteBuffer[pos=0 lim=23 cap=23]}]}
+2017-10-12 09:03:24,368 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:434] Successfully joined group groupC with generation 1
+2017-10-12 09:03:24,371 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:219] Setting newly assigned partitions [tp1-0] for group groupC
+2017-10-12 09:03:24,373 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:612] Group groupC fetching committed offsets for partitions: [tp1-0]
+2017-10-12 09:03:24,381 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:658] Group groupC has no committed offset for partition tp1-0
+2017-10-12 09:03:24,383 DEBUG [main] o.a.k.c.c.i.Fetcher [Fetcher.java:293] Resetting offset for partition tp1-0 to earliest offset.
+2017-10-12 09:03:24,388 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 2 at 10.33.4.231:9092.
+2017-10-12 09:03:24,388 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.bytes-sent
+2017-10-12 09:03:24,391 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.bytes-received
+2017-10-12 09:03:24,393 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.latency
+2017-10-12 09:03:24,393 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 2
+2017-10-12 09:03:24,401 DEBUG [main] o.a.k.c.c.i.Fetcher [Fetcher.java:499] Fetched offset 0 for partition tp1-0
+2017-10-12 09:03:25,761 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.tp1.bytes-fetched
+2017-10-12 09:03:25,763 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.tp1.records-fetched
+2017-10-12 09:03:33,002 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 09:03:33,002 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 300 for partition tp1-0
+2017-10-12 09:03:33,002 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 300 for partition tp1-0
+2017-10-12 09:03:35,997 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 09:03:38,004 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 300 for partition tp1-0
+2017-10-12 09:03:38,009 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 300 for partition tp1-0
+2017-10-12 09:03:38,999 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 09:03:41,995 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 09:03:43,002 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 300 for partition tp1-0
+2017-10-12 09:03:43,007 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 300 for partition tp1-0
+2017-10-12 09:03:44,998 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 09:03:47,999 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 300 for partition tp1-0
+2017-10-12 09:03:48,004 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 300 for partition tp1-0
+2017-10-12 09:03:48,014 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:15:57,922 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:178] ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [10.33.4.231:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = all
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 1
+
+2017-10-12 15:15:57,986 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bufferpool-wait-time
+2017-10-12 15:15:58,000 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name buffer-exhausted-records
+2017-10-12 15:15:58,001 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 1 to Cluster(nodes = [10.33.4.231:9092 (id: -1 rack: null)], partitions = [])
+2017-10-12 15:15:58,176 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-closed:
+2017-10-12 15:15:58,177 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-created:
+2017-10-12 15:15:58,177 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent-received:
+2017-10-12 15:15:58,177 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent:
+2017-10-12 15:15:58,179 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-received:
+2017-10-12 15:15:58,179 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name select-time:
+2017-10-12 15:15:58,179 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name io-time:
+2017-10-12 15:15:58,185 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name batch-size
+2017-10-12 15:15:58,185 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name compression-rate
+2017-10-12 15:15:58,185 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name queue-time
+2017-10-12 15:15:58,186 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name request-time
+2017-10-12 15:15:58,186 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name produce-throttle-time
+2017-10-12 15:15:58,186 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-per-request
+2017-10-12 15:15:58,186 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name record-retries
+2017-10-12 15:15:58,187 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name errors
+2017-10-12 15:15:58,187 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name record-size-max
+2017-10-12 15:15:58,195 INFO [main] o.a.k.c.p.ProducerConfig [AbstractConfig.java:178] ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [10.33.4.231:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = producer-1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = all
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 1
+
+2017-10-12 15:15:58,215 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.p.i.Sender [Sender.java:129] Starting Kafka producer I/O thread.
+2017-10-12 15:15:58,217 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:83] Kafka version : 0.10.0.0
+2017-10-12 15:15:58,218 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:84] Kafka commitId : b8642491e78c5a13
+2017-10-12 15:15:58,219 DEBUG [main] o.a.k.c.p.KafkaProducer [KafkaProducer.java:329] Kafka producer started
+2017-10-12 15:16:04,142 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:644] Initialize connection to node -1 for sending metadata request
+2017-10-12 15:16:04,143 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.231:9092.
+2017-10-12 15:16:04,159 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-sent
+2017-10-12 15:16:04,161 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-received
+2017-10-12 15:16:04,162 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.latency
+2017-10-12 15:16:04,164 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node -1
+2017-10-12 15:16:04,201 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:640] Sending metadata request {topics=[tp1]} to node -1
+2017-10-12 15:16:04,218 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 2 to Cluster(nodes = [10.33.4.231:9091 (id: 1 rack: null), 10.33.4.231:9092 (id: 2 rack: null), 10.33.4.231:9093 (id: 3 rack: null)], partitions = [Partition(topic = tp1, partition = 0, leader = 2, replicas = [1,2,], isr = [1,2,]])
+2017-10-12 15:16:04,261 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 2 at 10.33.4.231:9092.
+2017-10-12 15:16:04,262 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.bytes-sent
+2017-10-12 15:16:04,263 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.bytes-received
+2017-10-12 15:16:04,263 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.latency
+2017-10-12 15:16:04,263 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 2
+2017-10-12 15:16:04,263 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.tp1.records-per-batch
+2017-10-12 15:16:04,263 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.tp1.bytes
+2017-10-12 15:16:04,264 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.tp1.compression-rate
+2017-10-12 15:16:04,264 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.tp1.record-retries
+2017-10-12 15:16:04,264 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.tp1.record-errors
+2017-10-12 15:16:08,765 INFO [main] o.a.k.c.p.KafkaProducer [KafkaProducer.java:658] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2017-10-12 15:16:08,766 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.p.i.Sender [Sender.java:140] Beginning shutdown of Kafka producer I/O thread, sending remaining records.
+2017-10-12 15:16:08,766 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:315] Removed sensor with name connections-closed:
+2017-10-12 15:16:08,767 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:315] Removed sensor with name connections-created:
+2017-10-12 15:16:08,767 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:315] Removed sensor with name bytes-sent-received:
+2017-10-12 15:16:08,767 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:315] Removed sensor with name bytes-sent:
+2017-10-12 15:16:08,767 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:315] Removed sensor with name bytes-received:
+2017-10-12 15:16:08,768 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:315] Removed sensor with name select-time:
+2017-10-12 15:16:08,768 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:315] Removed sensor with name io-time:
+2017-10-12 15:16:08,768 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:315] Removed sensor with name node--1.bytes-sent
+2017-10-12 15:16:08,768 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:315] Removed sensor with name node--1.bytes-received
+2017-10-12 15:16:08,768 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:315] Removed sensor with name node--1.latency
+2017-10-12 15:16:08,769 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:315] Removed sensor with name node-2.bytes-sent
+2017-10-12 15:16:08,769 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:315] Removed sensor with name node-2.bytes-received
+2017-10-12 15:16:08,769 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.m.Metrics [Metrics.java:315] Removed sensor with name node-2.latency
+2017-10-12 15:16:08,769 DEBUG [kafka-producer-network-thread | producer-1] o.a.k.c.p.i.Sender [Sender.java:163] Shutdown of Kafka producer I/O thread has completed.
+2017-10-12 15:16:08,770 DEBUG [main] o.a.k.c.p.KafkaProducer [KafkaProducer.java:700] The Kafka producer has closed.
+2017-10-12 15:16:25,901 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.231:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = groupC
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = earliest
+
+2017-10-12 15:16:25,905 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:597] Starting the Kafka consumer
+2017-10-12 15:16:25,973 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 1 to Cluster(nodes = [10.33.4.231:9092 (id: -1 rack: null)], partitions = [])
+2017-10-12 15:16:26,146 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-closed:
+2017-10-12 15:16:26,150 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-created:
+2017-10-12 15:16:26,150 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent-received:
+2017-10-12 15:16:26,151 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent:
+2017-10-12 15:16:26,152 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-received:
+2017-10-12 15:16:26,153 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name select-time:
+2017-10-12 15:16:26,153 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name io-time:
+2017-10-12 15:16:26,161 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.231:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = consumer-1
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = groupC
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = earliest
+
+2017-10-12 15:16:26,176 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name heartbeat-latency
+2017-10-12 15:16:26,177 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name join-latency
+2017-10-12 15:16:26,177 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name sync-latency
+2017-10-12 15:16:26,184 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name commit-latency
+2017-10-12 15:16:26,190 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-fetched
+2017-10-12 15:16:26,191 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-fetched
+2017-10-12 15:16:26,191 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-latency
+2017-10-12 15:16:26,192 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-lag
+2017-10-12 15:16:26,192 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-throttle-time
+2017-10-12 15:16:26,195 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:83] Kafka version : 0.10.0.0
+2017-10-12 15:16:26,195 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:84] Kafka commitId : b8642491e78c5a13
+2017-10-12 15:16:26,196 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:696] Kafka consumer created
+2017-10-12 15:16:26,197 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:802] Subscribed to topic(s): tp1
+2017-10-12 15:16:26,198 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:476] Sending coordinator request for group groupC to broker 10.33.4.231:9092 (id: -1 rack: null)
+2017-10-12 15:16:26,221 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.231:9092.
+2017-10-12 15:16:26,226 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-sent
+2017-10-12 15:16:26,227 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-received
+2017-10-12 15:16:26,227 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.latency
+2017-10-12 15:16:26,227 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node -1
+2017-10-12 15:16:26,322 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:640] Sending metadata request {topics=[tp1]} to node -1
+2017-10-12 15:16:26,475 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 2 to Cluster(nodes = [10.33.4.231:9093 (id: 3 rack: null), 10.33.4.231:9091 (id: 1 rack: null), 10.33.4.231:9092 (id: 2 rack: null)], partitions = [Partition(topic = tp1, partition = 0, leader = 2, replicas = [1,2,], isr = [1,2,]])
+2017-10-12 15:16:26,479 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:489] Received group coordinator response ClientResponse(receivedTimeMs=1507792586479, disconnected=false, request=ClientRequest(expectResponse=true, callback=org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient$RequestFutureCompletionHandler@5dafbe45, request=RequestSend(header={api_key=10,api_version=0,correlation_id=0,client_id=consumer-1}, body={group_id=groupC}), createdTimeMs=1507792586218, sendTimeMs=1507792586322), responseBody={error_code=0,coordinator={node_id=1,host=10.33.4.231,port=9091}})
+2017-10-12 15:16:26,480 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] Discovered coordinator 10.33.4.231:9091 (id: 2147483646 rack: null) for group groupC.
+2017-10-12 15:16:26,480 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 2147483646 at 10.33.4.231:9091.
+2017-10-12 15:16:26,481 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:280] Revoking previously assigned partitions [] for group groupC
+2017-10-12 15:16:26,481 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:326] (Re-)joining group groupC
+2017-10-12 15:16:26,483 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:334] Sending JoinGroup ({group_id=groupC,session_timeout=30000,member_id=,protocol_type=consumer,group_protocols=[{protocol_name=range,protocol_metadata=java.nio.HeapByteBuffer[pos=0 lim=15 cap=15]}]}) to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null)
+2017-10-12 15:16:26,485 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.bytes-sent
+2017-10-12 15:16:26,486 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.bytes-received
+2017-10-12 15:16:26,486 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.latency
+2017-10-12 15:16:26,487 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 2147483646
+2017-10-12 15:16:26,492 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:351] Received successful join group response for group groupC: {error_code=0,generation_id=3,group_protocol=range,leader_id=consumer-1-8c652b47-9c45-4b9e-b021-4e3249899354,member_id=consumer-1-8c652b47-9c45-4b9e-b021-4e3249899354,members=[{member_id=consumer-1-8c652b47-9c45-4b9e-b021-4e3249899354,member_metadata=java.nio.HeapByteBuffer[pos=0 lim=15 cap=15]}]}
+2017-10-12 15:16:26,492 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:257] Performing assignment for group groupC using strategy range with subscriptions {consumer-1-8c652b47-9c45-4b9e-b021-4e3249899354=Subscription(topics=[tp1])}
+2017-10-12 15:16:26,493 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:262] Finished assignment for group groupC: {consumer-1-8c652b47-9c45-4b9e-b021-4e3249899354=Assignment(partitions=[tp1-0])}
+2017-10-12 15:16:26,494 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:408] Sending leader SyncGroup for group groupC to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null): {group_id=groupC,generation_id=3,member_id=consumer-1-8c652b47-9c45-4b9e-b021-4e3249899354,group_assignment=[{member_id=consumer-1-8c652b47-9c45-4b9e-b021-4e3249899354,member_assignment=java.nio.HeapByteBuffer[pos=0 lim=23 cap=23]}]}
+2017-10-12 15:16:26,499 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:434] Successfully joined group groupC with generation 3
+2017-10-12 15:16:26,500 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:219] Setting newly assigned partitions [tp1-0] for group groupC
+2017-10-12 15:16:26,501 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:612] Group groupC fetching committed offsets for partitions: [tp1-0]
+2017-10-12 15:16:26,505 DEBUG [main] o.a.k.c.c.i.Fetcher [Fetcher.java:173] Resetting offset for partition tp1-0 to the committed offset 300
+2017-10-12 15:16:26,507 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 2 at 10.33.4.231:9092.
+2017-10-12 15:16:26,508 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.bytes-sent
+2017-10-12 15:16:26,509 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.bytes-received
+2017-10-12 15:16:26,509 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.latency
+2017-10-12 15:16:26,509 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 2
+2017-10-12 15:16:26,539 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.tp1.bytes-fetched
+2017-10-12 15:16:26,539 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.tp1.records-fetched
+2017-10-12 15:16:29,507 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:16:31,185 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 400 for partition tp1-0
+2017-10-12 15:16:31,504 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 400 for partition tp1-0
+2017-10-12 15:16:32,504 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:16:35,502 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:16:36,185 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 400 for partition tp1-0
+2017-10-12 15:16:36,504 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 400 for partition tp1-0
+2017-10-12 15:16:38,503 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:51:59,667 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.231:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = groupC
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = earliest
+
+2017-10-12 15:51:59,670 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:597] Starting the Kafka consumer
+2017-10-12 15:51:59,729 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 1 to Cluster(nodes = [10.33.4.231:9092 (id: -1 rack: null)], partitions = [])
+2017-10-12 15:51:59,862 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-closed:
+2017-10-12 15:51:59,864 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-created:
+2017-10-12 15:51:59,864 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent-received:
+2017-10-12 15:51:59,864 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent:
+2017-10-12 15:51:59,866 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-received:
+2017-10-12 15:51:59,866 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name select-time:
+2017-10-12 15:51:59,867 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name io-time:
+2017-10-12 15:51:59,874 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.231:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = consumer-1
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = groupC
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = earliest
+
+2017-10-12 15:51:59,890 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name heartbeat-latency
+2017-10-12 15:51:59,890 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name join-latency
+2017-10-12 15:51:59,891 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name sync-latency
+2017-10-12 15:51:59,896 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name commit-latency
+2017-10-12 15:51:59,902 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-fetched
+2017-10-12 15:51:59,903 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-fetched
+2017-10-12 15:51:59,903 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-latency
+2017-10-12 15:51:59,903 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-lag
+2017-10-12 15:51:59,904 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-throttle-time
+2017-10-12 15:51:59,908 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:83] Kafka version : 0.10.0.0
+2017-10-12 15:51:59,908 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:84] Kafka commitId : b8642491e78c5a13
+2017-10-12 15:51:59,909 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:696] Kafka consumer created
+2017-10-12 15:51:59,910 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:802] Subscribed to topic(s): testKJ1
+2017-10-12 15:51:59,910 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:476] Sending coordinator request for group groupC to broker 10.33.4.231:9092 (id: -1 rack: null)
+2017-10-12 15:51:59,930 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.231:9092.
+2017-10-12 15:51:59,936 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-sent
+2017-10-12 15:51:59,937 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-received
+2017-10-12 15:51:59,937 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.latency
+2017-10-12 15:51:59,940 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node -1
+2017-10-12 15:52:00,030 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:640] Sending metadata request {topics=[testKJ1]} to node -1
+2017-10-12 15:52:00,101 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 2 to Cluster(nodes = [10.33.4.231:9091 (id: 1 rack: null), 10.33.4.231:9093 (id: 3 rack: null), 10.33.4.231:9092 (id: 2 rack: null)], partitions = [Partition(topic = testKJ1, partition = 0, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2017-10-12 15:52:00,103 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:489] Received group coordinator response ClientResponse(receivedTimeMs=1507794720103, disconnected=false, request=ClientRequest(expectResponse=true, callback=org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient$RequestFutureCompletionHandler@5dafbe45, request=RequestSend(header={api_key=10,api_version=0,correlation_id=0,client_id=consumer-1}, body={group_id=groupC}), createdTimeMs=1507794719928, sendTimeMs=1507794720031), responseBody={error_code=0,coordinator={node_id=1,host=10.33.4.231,port=9091}})
+2017-10-12 15:52:00,104 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] Discovered coordinator 10.33.4.231:9091 (id: 2147483646 rack: null) for group groupC.
+2017-10-12 15:52:00,104 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 2147483646 at 10.33.4.231:9091.
+2017-10-12 15:52:00,104 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:280] Revoking previously assigned partitions [] for group groupC
+2017-10-12 15:52:00,105 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:326] (Re-)joining group groupC
+2017-10-12 15:52:00,107 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:334] Sending JoinGroup ({group_id=groupC,session_timeout=30000,member_id=,protocol_type=consumer,group_protocols=[{protocol_name=range,protocol_metadata=java.nio.HeapByteBuffer[pos=0 lim=19 cap=19]}]}) to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null)
+2017-10-12 15:52:00,111 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.bytes-sent
+2017-10-12 15:52:00,112 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.bytes-received
+2017-10-12 15:52:00,112 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.latency
+2017-10-12 15:52:00,121 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 2147483646
+2017-10-12 15:52:00,124 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:351] Received successful join group response for group groupC: {error_code=0,generation_id=5,group_protocol=range,leader_id=consumer-1-3f3801e3-ab0c-4d4b-8610-1304c1ab42d8,member_id=consumer-1-3f3801e3-ab0c-4d4b-8610-1304c1ab42d8,members=[{member_id=consumer-1-3f3801e3-ab0c-4d4b-8610-1304c1ab42d8,member_metadata=java.nio.HeapByteBuffer[pos=0 lim=19 cap=19]}]}
+2017-10-12 15:52:00,125 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:257] Performing assignment for group groupC using strategy range with subscriptions {consumer-1-3f3801e3-ab0c-4d4b-8610-1304c1ab42d8=Subscription(topics=[testKJ1])}
+2017-10-12 15:52:00,126 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:262] Finished assignment for group groupC: {consumer-1-3f3801e3-ab0c-4d4b-8610-1304c1ab42d8=Assignment(partitions=[testKJ1-0])}
+2017-10-12 15:52:00,127 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:408] Sending leader SyncGroup for group groupC to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null): {group_id=groupC,generation_id=5,member_id=consumer-1-3f3801e3-ab0c-4d4b-8610-1304c1ab42d8,group_assignment=[{member_id=consumer-1-3f3801e3-ab0c-4d4b-8610-1304c1ab42d8,member_assignment=java.nio.HeapByteBuffer[pos=0 lim=27 cap=27]}]}
+2017-10-12 15:52:00,141 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:434] Successfully joined group groupC with generation 5
+2017-10-12 15:52:00,150 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:219] Setting newly assigned partitions [testKJ1-0] for group groupC
+2017-10-12 15:52:00,150 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:612] Group groupC fetching committed offsets for partitions: [testKJ1-0]
+2017-10-12 15:52:00,153 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:658] Group groupC has no committed offset for partition testKJ1-0
+2017-10-12 15:52:00,154 DEBUG [main] o.a.k.c.c.i.Fetcher [Fetcher.java:293] Resetting offset for partition testKJ1-0 to earliest offset.
+2017-10-12 15:52:00,155 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 2 at 10.33.4.231:9092.
+2017-10-12 15:52:00,156 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.bytes-sent
+2017-10-12 15:52:00,156 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.bytes-received
+2017-10-12 15:52:00,157 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.latency
+2017-10-12 15:52:00,157 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 2
+2017-10-12 15:52:00,159 DEBUG [main] o.a.k.c.c.i.Fetcher [Fetcher.java:499] Fetched offset 0 for partition testKJ1-0
+2017-10-12 15:52:00,175 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.testKJ1.bytes-fetched
+2017-10-12 15:52:00,175 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.testKJ1.records-fetched
+2017-10-12 15:52:03,157 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:52:04,911 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:05,162 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:06,153 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:52:09,152 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:52:09,902 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:10,159 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:12,153 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:52:14,906 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:15,151 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:52:15,153 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:18,153 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:52:19,902 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:20,158 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:21,151 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:52:24,152 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:52:24,908 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:25,159 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:27,152 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:52:29,910 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:30,153 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:52:30,162 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:33,150 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:52:34,909 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:35,153 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:36,151 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:52:39,152 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:52:39,908 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:40,153 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:42,152 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:52:44,905 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:45,155 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:52:45,159 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:48,152 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:52:49,908 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:50,159 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:51,152 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:52:54,152 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:52:54,905 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:55,158 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:52:57,152 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:52:59,907 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:53:00,153 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:53:00,158 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:53:05,829 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:53:05,835 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:53:05,837 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:53:08,823 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:53:10,832 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:53:11,164 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 48 for partition testKJ1-0
+2017-10-12 15:53:11,824 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:53:32,726 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:53:38,826 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 58 for partition testKJ1-0
+2017-10-12 15:53:38,829 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 58 for partition testKJ1-0
+2017-10-12 15:53:38,832 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:53:38,835 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 69 for partition testKJ1-0
+2017-10-12 15:53:41,233 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 69 for partition testKJ1-0
+2017-10-12 15:53:45,500 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:53:45,507 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 80 for partition testKJ1-0
+2017-10-12 15:53:45,511 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 80 for partition testKJ1-0
+2017-10-12 15:53:49,132 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:53:58,257 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 80 for partition testKJ1-0
+2017-10-12 15:53:58,258 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 80 for partition testKJ1-0
+2017-10-12 15:53:58,262 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:54:01,255 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:54:03,260 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 80 for partition testKJ1-0
+2017-10-12 15:54:03,268 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 80 for partition testKJ1-0
+2017-10-12 15:54:04,254 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:54:07,254 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:54:08,260 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 80 for partition testKJ1-0
+2017-10-12 15:54:08,264 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 80 for partition testKJ1-0
+2017-10-12 15:54:10,254 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:54:13,263 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 80 for partition testKJ1-0
+2017-10-12 15:54:13,267 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:54:13,271 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 80 for partition testKJ1-0
+2017-10-12 15:54:20,782 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:54:20,793 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 91 for partition testKJ1-0
+2017-10-12 15:54:20,800 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 91 for partition testKJ1-0
+2017-10-12 15:54:23,772 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:54:25,782 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:54:25,783 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:54:26,773 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:54:29,772 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:54:30,777 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:54:30,778 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:54:32,772 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:54:35,776 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:54:35,776 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:54:35,779 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:54:38,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:54:40,783 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:54:40,785 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:54:41,773 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:54:44,773 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:54:45,774 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:54:45,777 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:54:47,773 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:54:50,782 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:54:50,783 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:54:50,785 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:54:53,773 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:54:55,781 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:54:55,788 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:54:56,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:54:59,773 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:55:00,780 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:00,781 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:02,773 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:55:05,785 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:05,786 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:55:05,792 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:08,773 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:55:10,784 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:10,789 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:11,773 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:55:14,772 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:55:15,782 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:15,785 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:17,773 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:55:20,774 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:20,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:55:20,775 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:23,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:55:25,782 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:25,788 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:26,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:55:29,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:55:30,779 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:30,780 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:32,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:55:35,784 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:35,787 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:35,788 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:55:38,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:55:40,784 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:40,787 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:41,773 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:55:44,775 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:55:45,788 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:45,792 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:47,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:55:50,844 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:50,845 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:50,845 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:55:53,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:55:55,784 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:55,788 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:55:56,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:55:59,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:56:00,781 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:00,783 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:02,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:56:05,780 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:05,782 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:05,784 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:56:08,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:56:10,781 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:10,784 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:11,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:56:14,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:56:15,779 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:15,781 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:17,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:56:20,781 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:20,783 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:20,784 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:56:23,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:56:25,784 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:25,787 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:26,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:56:29,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:56:30,780 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:30,782 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:32,773 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:56:35,777 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:35,779 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:56:35,782 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:38,775 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:56:40,783 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:40,788 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:41,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:56:44,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:56:45,785 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:45,788 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:47,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:56:50,781 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:50,782 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:56:50,786 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:53,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:56:55,782 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:55,785 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:56:56,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:56:59,775 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:57:00,033 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:644] Initialize connection to node 1 for sending metadata request
+2017-10-12 15:57:00,033 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 1 at 10.33.4.231:9091.
+2017-10-12 15:57:00,035 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-1.bytes-sent
+2017-10-12 15:57:00,037 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-1.bytes-received
+2017-10-12 15:57:00,039 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-1.latency
+2017-10-12 15:57:00,040 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 1
+2017-10-12 15:57:00,041 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:640] Sending metadata request {topics=[testKJ1]} to node 1
+2017-10-12 15:57:00,070 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 3 to Cluster(nodes = [10.33.4.231:9092 (id: 2 rack: null), 10.33.4.231:9093 (id: 3 rack: null), 10.33.4.231:9091 (id: 1 rack: null)], partitions = [Partition(topic = testKJ1, partition = 0, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2017-10-12 15:57:00,781 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:00,784 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:02,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:57:05,781 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:05,782 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:57:05,785 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:08,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:57:10,784 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:10,785 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:11,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:57:14,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:57:15,784 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:15,791 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:17,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:57:20,787 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:20,788 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:57:20,791 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:23,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:57:25,782 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:25,786 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:26,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:57:29,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:57:30,786 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:30,790 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:32,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:57:35,786 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:35,786 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:57:35,789 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:38,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:57:40,783 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:40,786 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:41,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:57:44,773 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:57:45,775 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:45,779 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:47,773 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:57:50,785 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:50,785 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:57:50,787 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:53,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:57:55,776 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:55,777 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:57:56,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:57:59,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:58:00,779 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:58:00,781 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:58:02,773 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:58:05,782 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:58:05,783 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:58:05,784 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 113 for partition testKJ1-0
+2017-10-12 15:58:08,774 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:58:19,723 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 133 for partition testKJ1-0
+2017-10-12 15:58:19,724 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 133 for partition testKJ1-0
+2017-10-12 15:58:19,725 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:58:22,713 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:58:24,719 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 146 for partition testKJ1-0
+2017-10-12 15:58:24,723 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 146 for partition testKJ1-0
+2017-10-12 15:58:25,713 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:58:28,713 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:58:29,722 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 146 for partition testKJ1-0
+2017-10-12 15:58:29,725 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 146 for partition testKJ1-0
+2017-10-12 15:58:31,713 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:58:34,720 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 146 for partition testKJ1-0
+2017-10-12 15:58:34,721 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:58:34,723 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 146 for partition testKJ1-0
+2017-10-12 15:58:44,359 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:58:44,365 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 165 for partition testKJ1-0
+2017-10-12 15:58:44,367 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 165 for partition testKJ1-0
+2017-10-12 15:58:47,356 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:58:49,364 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 181 for partition testKJ1-0
+2017-10-12 15:58:49,366 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 181 for partition testKJ1-0
+2017-10-12 15:58:50,356 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:58:53,356 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:58:54,361 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 181 for partition testKJ1-0
+2017-10-12 15:58:54,363 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 181 for partition testKJ1-0
+2017-10-12 15:58:56,356 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:58:59,366 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 181 for partition testKJ1-0
+2017-10-12 15:58:59,367 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:58:59,381 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 181 for partition testKJ1-0
+2017-10-12 15:59:02,356 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:59:04,361 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 181 for partition testKJ1-0
+2017-10-12 15:59:04,366 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 181 for partition testKJ1-0
+2017-10-12 15:59:05,356 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:59:08,356 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:59:09,364 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 181 for partition testKJ1-0
+2017-10-12 15:59:09,366 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 181 for partition testKJ1-0
+2017-10-12 15:59:11,356 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:59:14,364 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 181 for partition testKJ1-0
+2017-10-12 15:59:14,365 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:59:14,368 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 181 for partition testKJ1-0
+2017-10-12 15:59:17,356 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:59:19,365 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 181 for partition testKJ1-0
+2017-10-12 15:59:19,368 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 181 for partition testKJ1-0
+2017-10-12 15:59:20,356 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:59:23,356 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-12 15:59:24,364 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 181 for partition testKJ1-0
+2017-10-12 15:59:24,365 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 181 for partition testKJ1-0
+2017-10-12 15:59:26,356 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
