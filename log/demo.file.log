@@ -13841,3 +13841,248 @@ org.apache.kafka.common.errors.DisconnectException: null
 2017-10-12 15:59:24,364 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 181 for partition testKJ1-0
 2017-10-12 15:59:24,365 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 181 for partition testKJ1-0
 2017-10-12 15:59:26,356 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-13 14:15:46,925 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.231:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = groupC
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = earliest
+
+2017-10-13 14:15:46,945 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:597] Starting the Kafka consumer
+2017-10-13 14:15:47,001 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 1 to Cluster(nodes = [10.33.4.231:9092 (id: -1 rack: null)], partitions = [])
+2017-10-13 14:15:47,130 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-closed:
+2017-10-13 14:15:47,131 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name connections-created:
+2017-10-13 14:15:47,131 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent-received:
+2017-10-13 14:15:47,131 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-sent:
+2017-10-13 14:15:47,132 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-received:
+2017-10-13 14:15:47,132 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name select-time:
+2017-10-13 14:15:47,132 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name io-time:
+2017-10-13 14:15:47,139 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:178] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [10.33.4.231:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = consumer-1
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = groupC
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = earliest
+
+2017-10-13 14:15:47,151 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name heartbeat-latency
+2017-10-13 14:15:47,152 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name join-latency
+2017-10-13 14:15:47,152 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name sync-latency
+2017-10-13 14:15:47,156 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name commit-latency
+2017-10-13 14:15:47,161 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name bytes-fetched
+2017-10-13 14:15:47,161 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-fetched
+2017-10-13 14:15:47,162 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-latency
+2017-10-13 14:15:47,162 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name records-lag
+2017-10-13 14:15:47,162 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name fetch-throttle-time
+2017-10-13 14:15:47,165 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:83] Kafka version : 0.10.0.0
+2017-10-13 14:15:47,166 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:84] Kafka commitId : b8642491e78c5a13
+2017-10-13 14:15:47,166 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:696] Kafka consumer created
+2017-10-13 14:15:47,167 DEBUG [main] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:802] Subscribed to topic(s): testFromFlume
+2017-10-13 14:15:48,932 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:476] Sending coordinator request for group groupC to broker 10.33.4.231:9092 (id: -1 rack: null)
+2017-10-13 14:15:49,021 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node -1 at 10.33.4.231:9092.
+2017-10-13 14:15:49,035 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-sent
+2017-10-13 14:15:49,038 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.bytes-received
+2017-10-13 14:15:49,039 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node--1.latency
+2017-10-13 14:15:49,040 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node -1
+2017-10-13 14:15:49,130 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:640] Sending metadata request {topics=[testFromFlume]} to node -1
+2017-10-13 14:15:49,218 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 2 to Cluster(nodes = [10.33.4.231:9092 (id: 2 rack: null), 10.33.4.231:9091 (id: 1 rack: null), 10.33.4.231:9093 (id: 3 rack: null)], partitions = [Partition(topic = testFromFlume, partition = 0, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2017-10-13 14:15:49,223 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:489] Received group coordinator response ClientResponse(receivedTimeMs=1507875349220, disconnected=false, request=ClientRequest(expectResponse=true, callback=org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient$RequestFutureCompletionHandler@5dafbe45, request=RequestSend(header={api_key=10,api_version=0,correlation_id=0,client_id=consumer-1}, body={group_id=groupC}), createdTimeMs=1507875349009, sendTimeMs=1507875349134), responseBody={error_code=0,coordinator={node_id=1,host=10.33.4.231,port=9091}})
+2017-10-13 14:15:49,223 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] Discovered coordinator 10.33.4.231:9091 (id: 2147483646 rack: null) for group groupC.
+2017-10-13 14:15:49,224 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 2147483646 at 10.33.4.231:9091.
+2017-10-13 14:15:49,224 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:280] Revoking previously assigned partitions [] for group groupC
+2017-10-13 14:15:49,225 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:326] (Re-)joining group groupC
+2017-10-13 14:15:49,233 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:334] Sending JoinGroup ({group_id=groupC,session_timeout=30000,member_id=,protocol_type=consumer,group_protocols=[{protocol_name=range,protocol_metadata=java.nio.HeapByteBuffer[pos=0 lim=25 cap=25]}]}) to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null)
+2017-10-13 14:15:49,235 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.bytes-sent
+2017-10-13 14:15:49,236 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.bytes-received
+2017-10-13 14:15:49,238 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2147483646.latency
+2017-10-13 14:15:49,239 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 2147483646
+2017-10-13 14:15:49,334 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:351] Received successful join group response for group groupC: {error_code=0,generation_id=1,group_protocol=range,leader_id=consumer-1-2aaccaa9-30ac-4dba-9cff-2172ffcf543c,member_id=consumer-1-2aaccaa9-30ac-4dba-9cff-2172ffcf543c,members=[{member_id=consumer-1-2aaccaa9-30ac-4dba-9cff-2172ffcf543c,member_metadata=java.nio.HeapByteBuffer[pos=0 lim=25 cap=25]}]}
+2017-10-13 14:15:49,335 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:257] Performing assignment for group groupC using strategy range with subscriptions {consumer-1-2aaccaa9-30ac-4dba-9cff-2172ffcf543c=Subscription(topics=[testFromFlume])}
+2017-10-13 14:15:49,339 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:262] Finished assignment for group groupC: {consumer-1-2aaccaa9-30ac-4dba-9cff-2172ffcf543c=Assignment(partitions=[testFromFlume-0])}
+2017-10-13 14:15:49,341 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:408] Sending leader SyncGroup for group groupC to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null): {group_id=groupC,generation_id=1,member_id=consumer-1-2aaccaa9-30ac-4dba-9cff-2172ffcf543c,group_assignment=[{member_id=consumer-1-2aaccaa9-30ac-4dba-9cff-2172ffcf543c,member_assignment=java.nio.HeapByteBuffer[pos=0 lim=33 cap=33]}]}
+2017-10-13 14:15:49,569 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:434] Successfully joined group groupC with generation 1
+2017-10-13 14:15:49,576 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:219] Setting newly assigned partitions [testFromFlume-0] for group groupC
+2017-10-13 14:15:49,579 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:612] Group groupC fetching committed offsets for partitions: [testFromFlume-0]
+2017-10-13 14:15:49,605 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:658] Group groupC has no committed offset for partition testFromFlume-0
+2017-10-13 14:15:49,606 DEBUG [main] o.a.k.c.c.i.Fetcher [Fetcher.java:293] Resetting offset for partition testFromFlume-0 to earliest offset.
+2017-10-13 14:15:49,613 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 2 at 10.33.4.231:9092.
+2017-10-13 14:15:49,614 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.bytes-sent
+2017-10-13 14:15:49,616 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.bytes-received
+2017-10-13 14:15:49,618 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-2.latency
+2017-10-13 14:15:49,619 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 2
+2017-10-13 14:15:49,623 DEBUG [main] o.a.k.c.c.i.Fetcher [Fetcher.java:499] Fetched offset 0 for partition testFromFlume-0
+2017-10-13 14:15:52,489 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.testFromFlume.bytes-fetched
+2017-10-13 14:15:52,492 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name topic.testFromFlume.records-fetched
+2017-10-13 14:16:33,906 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:542] Marking the coordinator 10.33.4.231:9091 (id: 2147483646 rack: null) dead for group groupC
+2017-10-13 14:16:33,908 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group groupC since the coordinator is unknown
+2017-10-13 14:16:33,911 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 0 for partition testFromFlume-0
+2017-10-13 14:16:33,912 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group groupC since the coordinator is unknown
+2017-10-13 14:16:33,913 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:476] Sending coordinator request for group groupC to broker 10.33.4.231:9092 (id: 2 rack: null)
+2017-10-13 14:16:33,922 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:489] Received group coordinator response ClientResponse(receivedTimeMs=1507875393922, disconnected=false, request=ClientRequest(expectResponse=true, callback=org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient$RequestFutureCompletionHandler@3e62d773, request=RequestSend(header={api_key=10,api_version=0,correlation_id=9,client_id=consumer-1}, body={group_id=groupC}), createdTimeMs=1507875393914, sendTimeMs=1507875393914), responseBody={error_code=0,coordinator={node_id=1,host=10.33.4.231,port=9091}})
+2017-10-13 14:16:33,923 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] Discovered coordinator 10.33.4.231:9091 (id: 2147483646 rack: null) for group groupC.
+2017-10-13 14:16:34,012 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:576] Offset commit for group groupC failed: The coordinator is not aware of this member.
+2017-10-13 14:16:34,013 WARN [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:454] Auto offset commit failed for group groupC: Commit cannot be completed since the group has already rebalanced and assigned the partitions to another member. This means that the time between subsequent calls to poll() was longer than the configured session.timeout.ms, which typically implies that the poll loop is spending too much time message processing. You can address this either by increasing the session timeout or by reducing the maximum size of batches returned in poll() with max.poll.records.
+2017-10-13 14:16:34,018 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:576] Offset commit for group groupC failed: The coordinator is not aware of this member.
+2017-10-13 14:16:34,019 WARN [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:471] Auto offset commit failed for group groupC: Commit cannot be completed since the group has already rebalanced and assigned the partitions to another member. This means that the time between subsequent calls to poll() was longer than the configured session.timeout.ms, which typically implies that the poll loop is spending too much time message processing. You can address this either by increasing the session timeout or by reducing the maximum size of batches returned in poll() with max.poll.records.
+2017-10-13 14:16:34,019 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:280] Revoking previously assigned partitions [testFromFlume-0] for group groupC
+2017-10-13 14:16:34,021 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:326] (Re-)joining group groupC
+2017-10-13 14:16:34,021 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:334] Sending JoinGroup ({group_id=groupC,session_timeout=30000,member_id=consumer-1-2aaccaa9-30ac-4dba-9cff-2172ffcf543c,protocol_type=consumer,group_protocols=[{protocol_name=range,protocol_metadata=java.nio.HeapByteBuffer[pos=0 lim=25 cap=25]}]}) to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null)
+2017-10-13 14:16:34,023 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:370] Attempt to join group groupC failed due to unknown member id.
+2017-10-13 14:16:34,023 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:326] (Re-)joining group groupC
+2017-10-13 14:16:34,023 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:334] Sending JoinGroup ({group_id=groupC,session_timeout=30000,member_id=,protocol_type=consumer,group_protocols=[{protocol_name=range,protocol_metadata=java.nio.HeapByteBuffer[pos=0 lim=25 cap=25]}]}) to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null)
+2017-10-13 14:16:34,027 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:351] Received successful join group response for group groupC: {error_code=0,generation_id=3,group_protocol=range,leader_id=consumer-1-4fdce4ed-46c6-4b1f-a350-7c4ea980cb23,member_id=consumer-1-4fdce4ed-46c6-4b1f-a350-7c4ea980cb23,members=[{member_id=consumer-1-4fdce4ed-46c6-4b1f-a350-7c4ea980cb23,member_metadata=java.nio.HeapByteBuffer[pos=0 lim=25 cap=25]}]}
+2017-10-13 14:16:34,027 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:257] Performing assignment for group groupC using strategy range with subscriptions {consumer-1-4fdce4ed-46c6-4b1f-a350-7c4ea980cb23=Subscription(topics=[testFromFlume])}
+2017-10-13 14:16:34,028 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:262] Finished assignment for group groupC: {consumer-1-4fdce4ed-46c6-4b1f-a350-7c4ea980cb23=Assignment(partitions=[testFromFlume-0])}
+2017-10-13 14:16:34,029 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:408] Sending leader SyncGroup for group groupC to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null): {group_id=groupC,generation_id=3,member_id=consumer-1-4fdce4ed-46c6-4b1f-a350-7c4ea980cb23,group_assignment=[{member_id=consumer-1-4fdce4ed-46c6-4b1f-a350-7c4ea980cb23,member_assignment=java.nio.HeapByteBuffer[pos=0 lim=33 cap=33]}]}
+2017-10-13 14:16:34,034 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:434] Successfully joined group groupC with generation 3
+2017-10-13 14:16:34,034 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:219] Setting newly assigned partitions [testFromFlume-0] for group groupC
+2017-10-13 14:16:34,036 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:612] Group groupC fetching committed offsets for partitions: [testFromFlume-0]
+2017-10-13 14:16:34,037 DEBUG [main] o.a.k.c.c.i.Fetcher [Fetcher.java:173] Resetting offset for partition testFromFlume-0 to the committed offset 0
+2017-10-13 14:16:34,427 DEBUG [main] o.a.k.c.c.i.Fetcher [Fetcher.java:580] Discarding fetch response for partition testFromFlume-0 since its offset 50 does not match the expected offset 0
+2017-10-13 14:16:37,047 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-13 14:16:39,011 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 50 for partition testFromFlume-0
+2017-10-13 14:16:39,017 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 50 for partition testFromFlume-0
+2017-10-13 14:16:39,039 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 50 for partition testFromFlume-0
+2017-10-13 14:22:17,572 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:542] Marking the coordinator 10.33.4.231:9091 (id: 2147483646 rack: null) dead for group groupC
+2017-10-13 14:22:17,574 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group groupC since the coordinator is unknown
+2017-10-13 14:22:17,575 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group groupC since the coordinator is unknown
+2017-10-13 14:22:17,575 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:436] Cannot auto-commit offsets for group groupC since the coordinator is unknown
+2017-10-13 14:22:17,575 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:644] Initialize connection to node 1 for sending metadata request
+2017-10-13 14:22:17,576 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:496] Initiating connection to node 1 at 10.33.4.231:9091.
+2017-10-13 14:22:17,577 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-1.bytes-sent
+2017-10-13 14:22:17,579 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-1.bytes-received
+2017-10-13 14:22:17,580 DEBUG [main] o.a.k.c.m.Metrics [Metrics.java:296] Added sensor with name node-1.latency
+2017-10-13 14:22:17,582 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:476] Completed connection to node 1
+2017-10-13 14:22:17,582 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:476] Sending coordinator request for group groupC to broker 10.33.4.231:9091 (id: 1 rack: null)
+2017-10-13 14:22:17,584 DEBUG [main] o.a.k.c.NetworkClient [NetworkClient.java:640] Sending metadata request {topics=[testFromFlume]} to node 2
+2017-10-13 14:22:17,591 DEBUG [main] o.a.k.c.Metadata [Metadata.java:180] Updated cluster metadata version 3 to Cluster(nodes = [10.33.4.231:9091 (id: 1 rack: null), 10.33.4.231:9093 (id: 3 rack: null), 10.33.4.231:9092 (id: 2 rack: null)], partitions = [Partition(topic = testFromFlume, partition = 0, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2017-10-13 14:22:17,594 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:489] Received group coordinator response ClientResponse(receivedTimeMs=1507875737594, disconnected=false, request=ClientRequest(expectResponse=true, callback=org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient$RequestFutureCompletionHandler@1cf56a1c, request=RequestSend(header={api_key=10,api_version=0,correlation_id=33,client_id=consumer-1}, body={group_id=groupC}), createdTimeMs=1507875737584, sendTimeMs=1507875737585), responseBody={error_code=0,coordinator={node_id=1,host=10.33.4.231,port=9091}})
+2017-10-13 14:22:17,594 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:505] Discovered coordinator 10.33.4.231:9091 (id: 2147483646 rack: null) for group groupC.
+2017-10-13 14:22:17,679 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:576] Offset commit for group groupC failed: The coordinator is not aware of this member.
+2017-10-13 14:22:17,680 WARN [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:454] Auto offset commit failed for group groupC: Commit cannot be completed since the group has already rebalanced and assigned the partitions to another member. This means that the time between subsequent calls to poll() was longer than the configured session.timeout.ms, which typically implies that the poll loop is spending too much time message processing. You can address this either by increasing the session timeout or by reducing the maximum size of batches returned in poll() with max.poll.records.
+2017-10-13 14:22:18,508 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:576] Offset commit for group groupC failed: The coordinator is not aware of this member.
+2017-10-13 14:22:18,510 WARN [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:454] Auto offset commit failed for group groupC: Commit cannot be completed since the group has already rebalanced and assigned the partitions to another member. This means that the time between subsequent calls to poll() was longer than the configured session.timeout.ms, which typically implies that the poll loop is spending too much time message processing. You can address this either by increasing the session timeout or by reducing the maximum size of batches returned in poll() with max.poll.records.
+2017-10-13 14:22:18,515 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:576] Offset commit for group groupC failed: The coordinator is not aware of this member.
+2017-10-13 14:22:18,519 WARN [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:471] Auto offset commit failed for group groupC: Commit cannot be completed since the group has already rebalanced and assigned the partitions to another member. This means that the time between subsequent calls to poll() was longer than the configured session.timeout.ms, which typically implies that the poll loop is spending too much time message processing. You can address this either by increasing the session timeout or by reducing the maximum size of batches returned in poll() with max.poll.records.
+2017-10-13 14:22:18,521 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:280] Revoking previously assigned partitions [testFromFlume-0] for group groupC
+2017-10-13 14:22:18,524 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:326] (Re-)joining group groupC
+2017-10-13 14:22:18,526 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:334] Sending JoinGroup ({group_id=groupC,session_timeout=30000,member_id=consumer-1-4fdce4ed-46c6-4b1f-a350-7c4ea980cb23,protocol_type=consumer,group_protocols=[{protocol_name=range,protocol_metadata=java.nio.HeapByteBuffer[pos=0 lim=25 cap=25]}]}) to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null)
+2017-10-13 14:22:18,530 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:370] Attempt to join group groupC failed due to unknown member id.
+2017-10-13 14:22:18,531 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:326] (Re-)joining group groupC
+2017-10-13 14:22:18,533 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:334] Sending JoinGroup ({group_id=groupC,session_timeout=30000,member_id=,protocol_type=consumer,group_protocols=[{protocol_name=range,protocol_metadata=java.nio.HeapByteBuffer[pos=0 lim=25 cap=25]}]}) to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null)
+2017-10-13 14:22:18,536 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:351] Received successful join group response for group groupC: {error_code=0,generation_id=5,group_protocol=range,leader_id=consumer-1-f311992c-e378-4c21-b3de-51f797d278d0,member_id=consumer-1-f311992c-e378-4c21-b3de-51f797d278d0,members=[{member_id=consumer-1-f311992c-e378-4c21-b3de-51f797d278d0,member_metadata=java.nio.HeapByteBuffer[pos=0 lim=25 cap=25]}]}
+2017-10-13 14:22:18,539 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:257] Performing assignment for group groupC using strategy range with subscriptions {consumer-1-f311992c-e378-4c21-b3de-51f797d278d0=Subscription(topics=[testFromFlume])}
+2017-10-13 14:22:18,540 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:262] Finished assignment for group groupC: {consumer-1-f311992c-e378-4c21-b3de-51f797d278d0=Assignment(partitions=[testFromFlume-0])}
+2017-10-13 14:22:18,541 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:408] Sending leader SyncGroup for group groupC to coordinator 10.33.4.231:9091 (id: 2147483646 rack: null): {group_id=groupC,generation_id=5,member_id=consumer-1-f311992c-e378-4c21-b3de-51f797d278d0,group_assignment=[{member_id=consumer-1-f311992c-e378-4c21-b3de-51f797d278d0,member_assignment=java.nio.HeapByteBuffer[pos=0 lim=33 cap=33]}]}
+2017-10-13 14:22:18,549 INFO [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:434] Successfully joined group groupC with generation 5
+2017-10-13 14:22:18,550 INFO [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:219] Setting newly assigned partitions [testFromFlume-0] for group groupC
+2017-10-13 14:22:18,551 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:612] Group groupC fetching committed offsets for partitions: [testFromFlume-0]
+2017-10-13 14:22:18,555 DEBUG [main] o.a.k.c.c.i.Fetcher [Fetcher.java:173] Resetting offset for partition testFromFlume-0 to the committed offset 50
+2017-10-13 14:22:22,560 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-13 14:22:23,380 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 50 for partition testFromFlume-0
+2017-10-13 14:22:23,387 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 50 for partition testFromFlume-0
+2017-10-13 14:22:23,393 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 50 for partition testFromFlume-0
+2017-10-13 14:22:24,035 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 50 for partition testFromFlume-0
+2017-10-13 14:22:25,958 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-13 14:22:28,526 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 50 for partition testFromFlume-0
+2017-10-13 14:22:28,529 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 50 for partition testFromFlume-0
+2017-10-13 14:22:28,530 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 50 for partition testFromFlume-0
+2017-10-13 14:22:29,675 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-13 14:22:29,682 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 50 for partition testFromFlume-0
+2017-10-13 14:22:33,188 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-13 14:22:33,530 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 50 for partition testFromFlume-0
+2017-10-13 14:22:33,535 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 50 for partition testFromFlume-0
+2017-10-13 14:22:33,538 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 50 for partition testFromFlume-0
+2017-10-13 14:22:34,667 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 50 for partition testFromFlume-0
+2017-10-13 14:22:51,920 DEBUG [main] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:629] Received successful heartbeat response for group groupC
+2017-10-13 14:22:51,921 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 50 for partition testFromFlume-0
+2017-10-13 14:22:51,925 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 50 for partition testFromFlume-0
+2017-10-13 14:22:51,930 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 50 for partition testFromFlume-0
+2017-10-13 14:22:51,934 DEBUG [main] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:544] Group groupC committed offset 50 for partition testFromFlume-0

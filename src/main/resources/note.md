@@ -48,6 +48,51 @@ flume
 http://www.51studyit.com/html/notes/20140506/128.html
 https://birdben.github.io/2016/08/24/Flume/Flume%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%89%EF%BC%89Flume%E5%A4%9A%E4%B8%AAAgent%E6%9E%B6%E6%9E%84/
 
+agent:
+agent.sources = s1
+agent.channels = c1
+agent.sinks = k1
+
+agent.sources.s1.type=exec
+agent.sources.s1.command=tail -F /usr/soft/log/abc.log
+agent.sources.s1.channels=c1
+agent.channels.c1.type=memory
+agent.channels.c1.capacity=10000
+agent.channels.c1.transactionCapacity=100
+
+#设置接收器
+agent.sinks.k1.channel=c1
+agent.sinks.k1.type= avro
+agent.sinks.k1.hostname=10.33.4.231
+agent.sinks.k1.port=40040
+collect:
+agent.sources = s1
+agent.channels = c1
+agent.sinks = k1
+
+agent.sources.s1.channels = c1
+agent.sources.s1.type = avro
+agent.sources.s1.bind = 10.33.4.231
+agent.sources.s1.port = 40040
+agent.sources.s1.threads = 2
+
+agent.channels.c1.type=memory
+agent.channels.c1.capacity=10000
+agent.channels.c1.transactionCapacity=100
+
+#设置kafka接收器
+agent.sinks.k1.type= org.apache.flume.sink.kafka.KafkaSink
+#设置Kafka的broker地址和端口号
+agent.sinks.k1.brokerList=10.33.4.231:9091
+#设置Kafka的Topic
+agent.sinks.k1.topic=testFromFlume
+#设置序列化方式
+agent.sinks.k1.serializer.class=kafka.serializer.StringEncoder
+
+agent.sinks.k1.channel=c1
+
+
+
 mananger
 
 conf/application.conf
@@ -62,4 +107,7 @@ supervisor 启动
 
 
 https://tech.youzan.com/you-zan-tong-ri-zhi-ping-tai-chu-tan/
+
+kafka
+http://www.cnblogs.com/fxjwind/p/4972244.html
 
