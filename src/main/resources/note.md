@@ -47,51 +47,20 @@ JMX_PORT=2898 bin/kafka-server-start.sh -daemon config/server1.properties
 flume
 http://www.51studyit.com/html/notes/20140506/128.html
 https://birdben.github.io/2016/08/24/Flume/Flume%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%89%EF%BC%89Flume%E5%A4%9A%E4%B8%AAAgent%E6%9E%B6%E6%9E%84/
+http://www.voidcn.com/search/sqrrau/list-15.html
+http://flychao88.iteye.com/blog/2288037
+http://www.bkjia.com/jzjy/1116911.html
 
-agent:
-agent.sources = s1
-agent.channels = c1
-agent.sinks = k1
+https://sdk.cn/news/3225
 
-agent.sources.s1.type=exec
-agent.sources.s1.command=tail -F /usr/soft/log/abc.log
-agent.sources.s1.channels=c1
-agent.channels.c1.type=memory
-agent.channels.c1.capacity=10000
-agent.channels.c1.transactionCapacity=100
+flume 官方插件，常用两种方式采集增量日志 
+1 exec 插件可以执行 Shell tail -f 文件 命令。优点，实时采集，缺点。如果flume进程重启。将无法找到当时的checkpoint。特别是主文件已经被log4j切走，或者被Shell脚本切走 
 
-#设置接收器
-agent.sinks.k1.channel=c1
-agent.sinks.k1.type= avro
-agent.sinks.k1.hostname=10.33.4.231
-agent.sinks.k1.port=40040
-collect:
-agent.sources = s1
-agent.channels = c1
-agent.sinks = k1
+2 spool 插件可以检测目录下新增的文件，处理过的文件用.COMPLETE文件名称结束。优点，Flume内部实现了checkpoint断点续传。(如何实现的?)缺点是不够实时。除非日志不按小时或者天级别切分，按分钟级别切分。这样产生的临时文件很多。不容易实现秒级别的采集 
 
-agent.sources.s1.channels = c1
-agent.sources.s1.type = avro
-agent.sources.s1.bind = 10.33.4.231
-agent.sources.s1.port = 40040
-agent.sources.s1.threads = 2
+3 每隔几秒钟读一下文件。甚至可以while true不休息。这种方式可以记录文件的总体字节偏移的checkpoint。百度内部的rtlc也是这么实现的。这种方式目前来看比较好 
 
-agent.channels.c1.type=memory
-agent.channels.c1.capacity=10000
-agent.channels.c1.transactionCapacity=100
-
-#设置kafka接收器
-agent.sinks.k1.type= org.apache.flume.sink.kafka.KafkaSink
-#设置Kafka的broker地址和端口号
-agent.sinks.k1.brokerList=10.33.4.231:9091
-#设置Kafka的Topic
-agent.sinks.k1.topic=testFromFlume
-#设置序列化方式
-agent.sinks.k1.serializer.class=kafka.serializer.StringEncoder
-
-agent.sinks.k1.channel=c1
-
-
+4 tail -n +1 从第一行开始读文件，读出所有的增量。优点是即保证了tail-f。又保证了获取了最后一行的行号。如果文件内容过大，flume内存会OOM。当然可以通过程序控制，丢弃无用的数据 
 
 mananger
 
