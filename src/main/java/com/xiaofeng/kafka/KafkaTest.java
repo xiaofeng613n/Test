@@ -28,7 +28,7 @@ public class KafkaTest
 	public static void testProducer() throws ExecutionException, InterruptedException
 	{
 		Properties props = new Properties();
-		props.put("bootstrap.servers", "10.33.4.231:9092");
+		props.put("bootstrap.servers", "192.168.1.108:9093");//10.33.4.231:9092
 		props.put("acks", "all");
 		props.put("retries", 0);
 		props.put("batch.size", 16384);
@@ -53,7 +53,7 @@ public class KafkaTest
 	{
 
 		Properties props = new Properties();
-		props.put("bootstrap.servers", "10.33.4.231:9092");
+		props.put("bootstrap.servers", "192.168.1.108:9093");//10.33.4.231:9092
 		props.put("group.id", "groupC");
 //		props.put("enable.auto.commit", "true");
 //		props.put("auto.commit.interval.ms", "1000");
@@ -61,7 +61,7 @@ public class KafkaTest
 		props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
 		props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
 		KafkaConsumer<String, String> consumer = new KafkaConsumer<>(props);
-		consumer.subscribe(Arrays.asList("testFromFlume"));
+		consumer.subscribe(Arrays.asList("topicOfFlume")); //testFromFlume
 		while (true)
 		{
 			ConsumerRecords<String, String> records = consumer.poll(100);
