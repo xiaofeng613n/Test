@@ -80,3 +80,9 @@ https://tech.youzan.com/you-zan-tong-ri-zhi-ping-tai-chu-tan/
 kafka
 http://www.cnblogs.com/fxjwind/p/4972244.html
 
+
+metric
+http://wuchong.me/blog/2015/08/01/getting-started-with-metrics/
+
+
+
