@@ -53,6 +53,9 @@ http://www.bkjia.com/jzjy/1116911.html
 
 https://sdk.cn/news/3225
 
+
+http://blog.csdn.net/sdksdk0/article/details/73176639
+
 flume 官方插件，常用两种方式采集增量日志 
 1 exec 插件可以执行 Shell tail -f 文件 命令。优点，实时采集，缺点。如果flume进程重启。将无法找到当时的checkpoint。特别是主文件已经被log4j切走，或者被Shell脚本切走 
 
