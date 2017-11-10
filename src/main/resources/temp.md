@@ -19,3 +19,5 @@ checking for md5 in system OpenSSL crypto library ... not found
 
 yum-config-manager命令找不到
 yum -y install yum-utils
+
+https://www.leavesongs.com/SOFT/play-with-openresty-lua-web.html
