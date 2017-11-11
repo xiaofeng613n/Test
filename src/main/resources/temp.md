@@ -21,3 +21,7 @@ yum-config-manager命令找不到
 yum -y install yum-utils
 
 https://www.leavesongs.com/SOFT/play-with-openresty-lua-web.html
+
+https://www.openresty.com.cn/pra_ngx_lua_allow_deny.html
+
+https://orchina.org/topic/153/view
