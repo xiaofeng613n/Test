@@ -11,6 +11,10 @@ public class App
 {
     public static void main( String[] args )
     {
+        String s = null;
+        String s2 = "";
+        String s3 = s + s2;
+        System.out.println(s + s2);
         int i = Integer.valueOf("00");
         System.out.println(i);
         test();

@@ -9,4 +9,6 @@ public interface CounterTracer
 	public boolean count() ;
 
 	public void waitForReached();
+
+	void printResult();
 }

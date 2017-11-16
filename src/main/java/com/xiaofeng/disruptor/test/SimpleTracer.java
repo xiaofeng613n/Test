@@ -65,4 +65,11 @@ public class SimpleTracer implements CounterTracer
 	{
 		return expectedCount + "/" + (endTicks - startTicks)  + " ==" + expectedCount/ (endTicks - startTicks);
 	}
- }
+
+	@Override
+	public void printResult()
+	{
+		System.out.println(this.toString());
+	}
+
+}
