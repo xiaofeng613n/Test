@@ -40,7 +40,6 @@ public class BlockingQueuePublisher implements EventPublisher
 				{
 					break;
 				}
-				//System.out.println("handle...");
 			}
 		}
 		catch (InterruptedException e)

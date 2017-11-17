@@ -16,16 +16,7 @@ public class App
 {
     public static void main( String[] args )
     {
-<<<<<<< HEAD
-        String s = null;
-        String s2 = "";
-        String s3 = s + s2;
-        System.out.println(s + s2);
-        int i = Integer.valueOf("00");
-        System.out.println(i);
-        test();
-        System.out.println( "Hello World!" );
-=======
+
          int i = Integer.valueOf("00");
          System.out.println(i);
          test();
@@ -33,7 +24,6 @@ public class App
 
          ExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
 
->>>>>>> 37187e9559290170e4f22944a42085bed67998f1
     }
 
     public static void test()

@@ -59,7 +59,7 @@ public class DisruptorPublisher implements EventPublisher {
 	@Override
 	public void stop()
 	{
-		//System.exit(0);
+		System.exit(0);
 	}
 
 	@Override
