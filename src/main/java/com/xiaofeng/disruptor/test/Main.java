@@ -8,11 +8,11 @@ public class Main
 {
 	public static void main(String[] args)
 	{
-		int DATA_COUNT = 1024*1024;
+		int DATA_COUNT = 1024*1024*10;
 		CounterTracer tracer = new SimpleTracer(DATA_COUNT);//计数跟踪到达指定的数值；
 		TestHandler handler = new TestHandler(tracer);//Consumer 的事件处理；
 
-//		EventPublisher publisher = publisherFactory.newInstance(new PublisherCreationArgs(DATA_COUNT, handler));//通过工厂对象创建不同的 Producer 的实现；//EventPublisher publisher = new BlockingQueuePublisher(100,handler);
+//		EventPublisher publisher = publisherFactory.newInstance(new PublisherCreationArgs(DATA_COUNT, handler));//通过工厂对象创建不同的 Producer 的实现；
 		EventPublisher publisher = new DisruptorPublisher(1024*1024,handler);
 //		EventPublisher publisher = new DirectingPublisher(handler);
 //		EventPublisher publisher = new BlockingQueuePublisher(DATA_COUNT,handler);

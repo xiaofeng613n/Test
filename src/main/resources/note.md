@@ -92,3 +92,12 @@ http://wuchong.me/blog/2015/08/01/getting-started-with-metrics/
 
 https://tech.meituan.com/disruptor.html
 
+http://brokendreams.iteye.com/blog/2255720
+
+https://tech.meituan.com/java-memory-reordering.html
+
+http://ifeve.com/memory-barriers-or-fences/
+
+https://mechanical-sympathy.blogspot.hk/2011/07/memory-barriersfences.html
+
+http://in355hz.iteye.com/blog/1797829
