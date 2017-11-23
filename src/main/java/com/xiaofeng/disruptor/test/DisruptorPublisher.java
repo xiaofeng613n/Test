@@ -16,7 +16,6 @@ public class DisruptorPublisher implements EventPublisher {
 
 	private class TestEventHandler implements EventHandler<TestEvent>
 	{
-
 		private TestHandler handler;
 
 		public TestEventHandler(TestHandler handler) {
@@ -24,15 +23,13 @@ public class DisruptorPublisher implements EventPublisher {
 		}
 
 		@Override
-		public void onEvent(TestEvent event, long sequence, boolean endOfBatch)
-				throws Exception {
+		public void onEvent(TestEvent event, long sequence, boolean endOfBatch) throws Exception {
 			handler.process(event);
 		}
 
 	}
 
-	private class TestEventFactory implements EventFactory<TestEvent>
-	{
+	private class TestEventFactory implements EventFactory<TestEvent> {
 		public TestEvent newInstance()
 		{
 			return new TestEvent();
@@ -49,9 +46,7 @@ public class DisruptorPublisher implements EventPublisher {
 	public DisruptorPublisher(int bufferSize, TestHandler handler) {
 		this.handler = new TestEventHandler(handler);
 		executor = Executors.newSingleThreadExecutor();
-		disruptor = new Disruptor<TestEvent>(new TestEventFactory(), bufferSize,
-				executor, ProducerType.SINGLE,
-				YIELDING_WAIT);
+		disruptor = new Disruptor<TestEvent>(new TestEventFactory(), bufferSize,executor, ProducerType.SINGLE, YIELDING_WAIT);
 	}
 
 	@Override
@@ -79,5 +74,4 @@ public class DisruptorPublisher implements EventPublisher {
 		}
 	}
 
-	//省略其它代码；
 }

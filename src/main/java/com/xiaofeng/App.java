@@ -16,6 +16,7 @@ public class App
 {
     public static void main( String[] args )
     {
+
          int i = Integer.valueOf("00");
          System.out.println(i);
          test();
