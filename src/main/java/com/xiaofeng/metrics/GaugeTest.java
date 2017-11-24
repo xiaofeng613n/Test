@@ -12,8 +12,11 @@ import java.util.concurrent.TimeUnit;
  * Created by xiao on 2017/10/26.
  */
 public class GaugeTest {
+
 	public static Queue<String> q = new LinkedList<String>();
+
 	public static void main(String[] args) throws InterruptedException {
+
 		MetricRegistry registry = new MetricRegistry();
 		ConsoleReporter reporter = ConsoleReporter.forRegistry(registry).build();
 		reporter.start(2, TimeUnit.SECONDS);
@@ -23,6 +26,7 @@ public class GaugeTest {
 						return q.size();
 					}
 				});
+
 		while(true){
 			Thread.sleep(1000);
 			q.add("Job-xxx");

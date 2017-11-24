@@ -17,12 +17,25 @@ public class App
     public static void main( String[] args )
     {
 
-         int i = Integer.valueOf("00");
-         System.out.println(i);
-         test();
-         System.out.println( "Hello World!" );
+//         int i = Integer.valueOf("00");
+//         System.out.println(i);
+//         test();
+//         System.out.println( "Hello World!" );
+//
+//         ExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
 
-         ExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
+        Thread thread = new Thread(()->{
+            while (true)
+            {
+                try {
+                    throw new Exception();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                System.out.println("1");
+            }
+        });
+        thread.start();
 
     }
 
