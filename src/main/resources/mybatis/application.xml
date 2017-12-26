@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:task="http://www.springframework.org/schema/task"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+   <!-- <context:component-scan base-package="spring.*"/>
+    <task:annotation-driven executor="exceptionHandlingTaskExecutor" scheduler="defaultTaskScheduler" />
+    <bean id="exceptionHandlingTaskExecutor" class="spring.ExceptionHandlingAsyncTaskExecutor">
+        <constructor-arg ref="defaultTaskExecutor" />
+    </bean>
+    <task:executor id="defaultTaskExecutor" pool-size="5" />
+    <task:scheduler id="defaultTaskScheduler" pool-size="1" />-->
+
+    <!-- TKmybatis自动扫描注册Mybatis mapper -->
+    <bean class="tk.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="mybatis.mapping"/>
+    </bean>
+    <!--
+    mvn mybatis-generator:generate
+    配置文件generatorConfig.xml详解：http://blog.csdn.net/isea533/article/details/42102297
+    -->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/mydb"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+    </bean>
+
+    <!-- 配置Spring的事务管理器 -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <!-- 定义事务管理器（声明式的事务） -->
+    <bean id="transactionBase"
+          class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean"
+          lazy-init="true" abstract="true">
+        <!-- 配置事务管理器 -->
+        <property name="transactionManager" ref="transactionManager" />
+        <!-- 配置事务属性 -->
+        <property name="transactionAttributes">
+            <props>
+                <prop key="*">PROPAGATION_REQUIRED</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- 配置DAO -->
+    <!--<bean id="userDaoTarget" class="com.bluesky.spring.dao.UserDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+
+    <bean id="userDao" parent="transactionBase" >
+        <property name="target" ref="userDaoTarget" />
+    </bean>-->
+</beans>
