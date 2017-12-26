@@ -38,7 +38,8 @@ public class WordNormalizer implements IRichBolt
 			collector.emit(a, new Values(word));
 		}
 		collector.ack(input);
-	}
+
+}
 
 	@Override
 	public void cleanup()

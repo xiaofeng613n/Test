@@ -24,19 +24,11 @@ public class App
 //
 //         ExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
 
-        Thread thread = new Thread(()->{
-            while (true)
-            {
-                try {
-                    throw new Exception();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-                System.out.println("1");
-            }
-        });
-        thread.start();
 
+        String s = "{\"query\": \"FROM \\\"M\\\" FROM \\\"jvm-db\\\".\\\"autogen\\\".\\\"%s\\\" WHERE time > :dashboardTime:\",}%";
+      String s1 = s.replaceAll("FROM","xx");
+        System.out.println(s);
+        System.out.println(s1);
     }
 
     public static void test()

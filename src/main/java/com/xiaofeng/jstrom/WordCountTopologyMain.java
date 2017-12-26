@@ -19,7 +19,7 @@ public class WordCountTopologyMain
 		builder.setBolt("word-normalizer", new WordNormalizer())
 				.shuffleGrouping("word-reader");
 
-		builder.setBolt("word-counter", new WordCounter(),2)
+		builder.setBolt("word-counter", new WordCounter(),3)
 				.fieldsGrouping("word-normalizer", new Fields("word"));
 		//配置
 		Config conf = new Config();
