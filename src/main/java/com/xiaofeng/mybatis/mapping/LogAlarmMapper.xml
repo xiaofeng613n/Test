@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaofeng.mybatis.mapping.LogAlarmMapper" >
+  <resultMap id="BaseResultMap" type="com.xiaofeng.mybatis.entity.LogAlarm" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="alarmName" property="alarmName" jdbcType="VARCHAR" />
+    <result column="alarmType" property="alarmType" jdbcType="TINYINT" />
+    <result column="alarmRuleType" property="alarmRuleType" jdbcType="TINYINT" />
+    <result column="alarmStartTime" property="alarmStartTime" jdbcType="INTEGER" />
+    <result column="alarmEndTime" property="alarmEndTime" jdbcType="INTEGER" />
+    <result column="alarmLevel" property="alarmLevel" jdbcType="TINYINT" />
+    <result column="appName" property="appName" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>
