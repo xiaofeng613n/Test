@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaofeng.mybatis.mapping.LogAlarmRuleVarDimensionMapper" >
+  <resultMap id="BaseResultMap" type="com.xiaofeng.mybatis.entity.LogAlarmRuleVarDimension" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="varId" property="varId" jdbcType="VARCHAR" />
+    <result column="fieldId" property="fieldId" jdbcType="VARCHAR" />
+    <result column="fieldType" property="fieldType" jdbcType="TINYINT" />
+    <result column="fieldKey" property="fieldKey" jdbcType="VARCHAR" />
+    <result column="valueMethod" property="valueMethod" jdbcType="TINYINT" />
+    <result column="fieldValue" property="fieldValue" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

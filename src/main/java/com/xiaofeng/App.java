@@ -1,5 +1,10 @@
 package com.xiaofeng;
 
+
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
+
+import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.ExecutorService;
@@ -24,11 +29,13 @@ public class App
 //
 //         ExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
 
-
-        String s = "{\"query\": \"FROM \\\"M\\\" FROM \\\"jvm-db\\\".\\\"autogen\\\".\\\"%s\\\" WHERE time > :dashboardTime:\",}%";
-      String s1 = s.replaceAll("FROM","xx");
-        System.out.println(s);
-        System.out.println(s1);
+//        String arrayStr = "[{\"id\":\"eeretg44334\",\"dsId\":\"xxx\",\"quotaType\":1,\"quotaName\":\"sum xx\",\"fieldKey\":\"xx\"},\n" +
+//                "{\"id\":\"eeretg44334\",\"dsId\":\"xxx\",\"quotaType\":1,\"quotaName\":\"sum xx\",\"fieldKey\":\"xx\"}]";
+//        JSONArray jsonArray = JSON.parseArray(arrayStr);
+//        System.out.println(jsonArray);
+        String arrayStr = "[\"method\",\"url\",\"ts\"]";
+        List<String> fieldList = JSON.parseArray(arrayStr,String.class);
+        System.out.println(fieldList);
     }
 
     public static void test()

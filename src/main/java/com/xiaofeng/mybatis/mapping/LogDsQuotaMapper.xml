@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaofeng.mybatis.mapping.LogDsQuotaMapper" >
+  <resultMap id="BaseResultMap" type="com.xiaofeng.mybatis.entity.LogDsQuota" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="dsId" property="dsId" jdbcType="VARCHAR" />
+    <result column="quotaType" property="quotaType" jdbcType="TINYINT" />
+    <result column="quotaName" property="quotaName" jdbcType="VARCHAR" />
+    <result column="fieldId" property="fieldId" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

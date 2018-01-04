@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaofeng.mybatis.mapping.LogDsMapper" >
+  <resultMap id="BaseResultMap" type="com.xiaofeng.mybatis.entity.LogDs" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="dsName" property="dsName" jdbcType="VARCHAR" />
+    <result column="timeFieldKey" property="timeFieldKey" jdbcType="VARCHAR" />
+    <result column="sampleFileKey" property="sampleFileKey" jdbcType="VARCHAR" />
+    <result column="appName" property="appName" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

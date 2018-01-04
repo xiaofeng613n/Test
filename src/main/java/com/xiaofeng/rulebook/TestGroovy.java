@@ -23,18 +23,21 @@ public class TestGroovy {
 //        ruleMap.put("2",new Rule("Long.parseLong(str.responseTime) > 10 && str.status == \"running\""));
 
         Map<String, Object> logMap = Maps.newHashMap();
-		logMap.put("responseTime", "200");
-		logMap.put("status", "running");
+		logMap.put("responseTime", 9.2);
+        logMap.put("status", "running");
+        logMap.put("x", "running");
 
 
-        Rule rule = new Rule("Long.parseLong(str.responseTime) > 10 && str.status == \"running\"");
+        Rule rule = new Rule("logMap.responseTime <10.1 && logMap.status == 'running'");
         Object value;
         value = rule.getShell().cal(logMap);
         System.out.println(value);
 
         Map<String, Object> logMap1 = Maps.newHashMap();
-        logMap1.put("responseTime", "1");
-        logMap1.put("status", "running");
+        logMap1.put("responseTime", 10);
+        logMap1.put("status", 200);
+        logMap1.put("x", "running");
+
         value = rule.getShell().cal(logMap1);
         System.out.println(value);
 
@@ -54,19 +57,17 @@ public class TestGroovy {
 
     static class MyShell extends GroovyShell{
 
-        private String txt;
-        private String scriptMd5;
-
         private Script script;
+        private String ruleStr;
 
-        MyShell(String txt){
+        MyShell(String ruleStr){
             super(new Binding());
-            evaluate(txt);
+            this.ruleStr = ruleStr;
+            evaluate(ruleStr);
         }
 
         public Object cal(Map<String, Object> logMap){
-            this.getContext().setVariable("str",logMap);
-            //script.setBinding(this.getContext());
+            this.getContext().setVariable("logMap",logMap);
             return script.run();
         }
 
@@ -78,6 +79,5 @@ public class TestGroovy {
 //        protected synchronized String generateScriptName() {
 //            return "Script" + scriptMd5 + ".groovy";
 //        }
-
     }
 }

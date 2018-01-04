@@ -5,7 +5,8 @@
     <properties resource="config.properties"/>
 
     <!-- 数据库驱动包位置 -->
-    <classPathEntry location="D:\Program Files\repository\mysql\mysql-connector-java\5.1.32\mysql-connector-java-5.1.32.jar" />
+    <!--<classPathEntry location="D:\Program Files\repository\mysql\mysql-connector-java\5.1.32\mysql-connector-java-5.1.32.jar" />-->
+    <classPathEntry location="C:\Users\xiaofeng\.m2\repository\mysql\mysql-connector-java\5.1.45\mysql-connector-java-5.1.45.jar" />
 
     <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
         <!-- TKmybatis配置 -->
@@ -33,9 +34,39 @@
         <!-- 生成service的包名和位置 -->
         <javaClientGenerator targetPackage="${targetMapperPackage}" targetProject="${targetJavaProject}" type="XMLMAPPER" />
         <!-- 要生成的那些表 -->
-        <table tableName="customer" domainObjectName="CustomerEntity" >
+        <!--<table tableName="customer" domainObjectName="CustomerEntity" >
+        <property name="useActualColumnNames" value="true"/>
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <!--<table tableName="log_alarm" domainObjectName="LogAlarm">
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
-
+        <table tableName="log_alarm_rule" domainObjectName="LogAlarmRule">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+        <table tableName="log_alarm_var" domainObjectName="LogAlarmRuleVar">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+        <table tableName="log_alarm_var_dimension" domainObjectName="LogAlarmRuleVarDimension">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+        <table tableName="log_ds" domainObjectName="LogDs">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+        <table tableName="log_ds_condition" domainObjectName="LogDsCondition">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+        <table tableName="log_ds_dimension" domainObjectName="LogDsDimension">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+        <table tableName="log_ds_quota" domainObjectName="LogDsQuota">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+        <table tableName="log_field" domainObjectName="LogField">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>-->
+        <table tableName="log_model" domainObjectName="LogModel">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
     </context>
 </generatorConfiguration>
