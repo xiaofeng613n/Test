@@ -1,5 +1,8 @@
 package com.xiaofeng;
 
+import java.util.List;
+import java.util.List;
+import java.util.Map;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
@@ -9,9 +12,7 @@ import com.google.common.collect.Maps;
 import com.google.common.collect.Queues;
 
 import java.util.*;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -23,7 +24,6 @@ public class App
 {
     public static void main( String[] args )
     {
-
 //         int i = Integer.valueOf("00");
 //         System.out.println(i);
 //         test();
@@ -31,10 +31,17 @@ public class App
 //
 //         ExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
 
+//        String s = "{\"query\": \"FROM \\\"M\\\" FROM \\\"jvm-db\\\".\\\"autogen\\\".\\\"%s\\\" WHERE time > :dashboardTime:\",}%";
+//      String s1 = s.replaceAll("FROM","xx");
+//        System.out.println(s);
+//        System.out.println(s1);
+
+        //Predicate<Map<String,Object>> filter =  stringObjectMap -> stringObjectMap.forEach( c -> );
 //        String arrayStr = "[{\"id\":\"eeretg44334\",\"dsId\":\"xxx\",\"quotaType\":1,\"quotaName\":\"sum xx\",\"fieldKey\":\"xx\"},\n" +
 //                "{\"id\":\"eeretg44334\",\"dsId\":\"xxx\",\"quotaType\":1,\"quotaName\":\"sum xx\",\"fieldKey\":\"xx\"}]";
 //        JSONArray jsonArray = JSON.parseArray(arrayStr);
 //        System.out.println(jsonArray);
+
 
         Matcher matcher = Pattern.compile("log", Pattern.CASE_INSENSITIVE).matcher("aa.log");
         System.out.println();
@@ -83,6 +90,10 @@ public class App
                 currentList.removeLast();
             }
         }
+        String arrayStr = "[\"method\",\"url\",\"ts\"]";
+        List<String> fieldList = com.alibaba.fastjson.JSON.parseArray(arrayStr,String.class);
+        System.out.println(fieldList);
+
     }
 
 
