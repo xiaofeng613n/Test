@@ -36,21 +36,20 @@ public class GroovyInJava {
 //		Boolean result2 = (Boolean) groovyObject.invokeMethod("output", logMap);
 //		System.out.println(result2);
 //
-		Map<String, Object> logMap3 = Maps.newHashMap();
-
-		logMap3.put("responseTime", "1001");
-		logMap3.put("status", "running");
-
 //		Boolean result3 = (Boolean) groovyObject.invokeMethod("output", logMap3);
 //		System.out.println(result3);
 
+			Map<String, Object> logMap3 = Maps.newHashMap();
+
+		logMap3.put("responseTime", 1001);
+		logMap3.put("status", "running");
 
 		Binding binding = new Binding();
 		binding.setVariable("str", logMap3);
 
 		GroovyShell shell = new GroovyShell(binding);
 
-		String script = "Long.parseLong(str.responseTime) > 100 && str.status == \"running\"";
+		String script = "str.responseTime) 100 && str.status == \"running\"";
 		// redirect output:
 		PrintStream oldOut = System.out;
 		Object value;

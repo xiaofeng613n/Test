@@ -22,26 +22,30 @@ public class TestGroovy {
 //        ruleMap.put("1",new Rule("Long.parseLong(str.responseTime) > 100 && str.status == \"running\""));
 //        ruleMap.put("2",new Rule("Long.parseLong(str.responseTime) > 10 && str.status == \"running\""));
 
-        Map<String, Object> logMap = Maps.newHashMap();
-		logMap.put("responseTime", 9.2);
-        logMap.put("status", "running");
-        logMap.put("x", "running");
+//        Map<String, Object> logMap = Maps.newHashMap();
+//		logMap.put("responseTime", 10.1);
+//        logMap.put("status", "running");
+//        logMap.put("x", "heldlo");
+//
+//        Rule rule = new Rule("logMap.responseTime == 10.1 && logMap.status == 'running' && !logMap.x.contains('ll')");
+//        Object value;
+//        value = rule.getShell().cal(logMap);
+//        System.out.println(value);
+//
+//        Map<String, Object> logMap1 = Maps.newHashMap();
+//        logMap1.put("responseTime", 10);
+//        logMap1.put("status", "running");
+//        logMap1.put("x", "runningll");
+//
+//        value = rule.getShell().cal(logMap1);
+//        System.out.println(value);
 
-
-        Rule rule = new Rule("logMap.responseTime <10.1 && logMap.status == 'running'");
-        Object value;
-        value = rule.getShell().cal(logMap);
+        Rule r = new Rule("!logMap.fieldKey.contains('fieldKey-1')");
+        Map<String, Object> map = Maps.newHashMap();
+        map.put("fieldKey", "fieldKey-1dasdf");
+        map.put("fieldKey-2", "fieldKey-2");
+        Object value = r.getShell().cal(map);
         System.out.println(value);
-
-        Map<String, Object> logMap1 = Maps.newHashMap();
-        logMap1.put("responseTime", 10);
-        logMap1.put("status", 200);
-        logMap1.put("x", "running");
-
-        value = rule.getShell().cal(logMap1);
-        System.out.println(value);
-
-
     }
 
     @Data
