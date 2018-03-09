@@ -2,6 +2,7 @@ package com.xiaofeng;
 
 import org.influxdb.InfluxDB;
 import org.influxdb.InfluxDBFactory;
+import org.influxdb.dto.BatchPoints;
 import org.influxdb.dto.Point;
 
 import java.util.List;
@@ -52,35 +53,61 @@ public class InfluxdbTest {
 //                e.printStackTrace();
 //            }
 //        }
-        for (int i = 0 ; i < Integer.MAX_VALUE; i ++){
-            int minCount = 3;
-            int maxCount = 10;
-            int minSum = 50;
-            int maxSum = 100;
 
-            String[] countries = {"CN","USA","UK","JPAN","FRANCE","INDIA"};
 
-            int countryIndex = 0 + (int)(Math.random() * (5-0+1));
-
-            int randomCount = minCount + (int)(Math.random() * (maxCount-minCount+1));
-            int randomSum = minSum + (int)(Math.random() * (maxSum-minSum+1));
-
-            Point point = Point.measurement(measurementName)
-                    .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
-                    .tag("country",countries[countryIndex])
-                    .addField("COUNT", randomCount)
-                    .addField("SUM", randomSum)
+//        for (int i = 0 ; i < Integer.MAX_VALUE; i ++){
+//            int minCount = 3;
+//            int maxCount = 10;
+//            int minSum = 50;
+//            int maxSum = 100;
+//
+//            String[] countries = {"CN","USA","UK","JPAN","FRANCE","INDIA"};
+//
+//            int countryIndex = 0 + (int)(Math.random() * (5-0+1));
+//
+//            int randomCount = minCount + (int)(Math.random() * (maxCount-minCount+1));
+//            int randomSum = minSum + (int)(Math.random() * (maxSum-minSum+1));
+//
+//            Point point = Point.measurement(measurementName)
+//                    .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
+//                    .tag("country",countries[countryIndex])
+//                    .addField("COUNT", randomCount)
+//                    .addField("SUM", randomSum)
+//                    .build();
+//            influxDB.setDatabase(dbName);
+//            influxDB.setRetentionPolicy("rp-7d-test");
+//            influxDB.write(point);
+//            System.err.println(point);
+//            try {
+//                Thread.sleep(10000);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        }
+        long time1 = 1519457100000L;
+        Point point = Point.measurement("test-url")
+                    .time(time1, TimeUnit.MILLISECONDS)
+                    .tag("url","www.2.com")
+                    .addField("count", 1)
+                    .addField("urlField","www.2.com")
                     .build();
-            influxDB.setDatabase(dbName);
-            influxDB.setRetentionPolicy("rp-7d-test");
-            influxDB.write(point);
-            System.err.println(point);
-            try {
-                Thread.sleep(10000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
+        Point point2 = Point.measurement("test-url")
+                .time(time1, TimeUnit.MILLISECONDS)
+                .tag("url","www.3.com")
+                .addField("count", 5)
+                .addField("urlField","www.3.com")
+                .build();
+        Point point3 = Point.measurement("test-url")
+                .time(time1, TimeUnit.MILLISECONDS)
+                .tag("url","www.4.com")
+                .addField("count", 9)
+                .addField("urlField","www.4.com")
+                .build();
+        influxDB.setDatabase("appXX");
+        influxDB.write(point);
+        influxDB.write(point2);
+        influxDB.write(point3);
+
 
     }
 
