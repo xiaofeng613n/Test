@@ -21,14 +21,14 @@ public class KafkaTest
 {
 	public static void main(String[] args) throws ExecutionException, InterruptedException
 	{
-		//testProducer();
-		testConsumer();
+		testProducer();
+		//testConsumer();
 	}
 
 	public static void testProducer() throws ExecutionException, InterruptedException
 	{
 		Properties props = new Properties();
-		props.put("bootstrap.servers", "192.168.1.108:9093");//10.33.4.231:9092
+		props.put("bootstrap.servers", "linux1:9093");//10.33.4.231:9092
 		props.put("acks", "all");
 		props.put("retries", 0);
 		props.put("batch.size", 16384);
@@ -38,12 +38,14 @@ public class KafkaTest
 		props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
 		Producer<String, String> producer = new KafkaProducer<>(props);
-		for(int i = 0; i < 100; i++)
+		for(int i = 0; i < Integer.MAX_VALUE; i++)
 		{
-			Future<RecordMetadata> send = producer.send(new ProducerRecord<String, String>("tp1", Integer.toString(i), Integer.toString(i)));
-			System.out.println(send.get().offset());
-			send.get().partition();
+			String topic =  ( i % 2 ) == 0 ? "topic1" : "topic2";
+			Future<RecordMetadata> send = producer.send(new ProducerRecord<String, String>(topic, Integer.toString(i), Integer.toString(i)));
+			System.out.println("offset:" +send.get().offset());
+			System.out.println("partition:" + send.get().partition());
 			producer.flush();
+			Thread.sleep(5000);
 		}
 
 		producer.close();
