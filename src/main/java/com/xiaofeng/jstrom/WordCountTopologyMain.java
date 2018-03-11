@@ -16,21 +16,21 @@ public class WordCountTopologyMain
 		TopologyBuilder builder = new TopologyBuilder();
 		builder.setSpout("word-reader",new WordReader());
 
-		builder.setBolt("word-normalizer", new WordNormalizer())
+		builder.setBolt("word-normalizer", new WordNormalizer(),1)
 				.shuffleGrouping("word-reader");
 
-		builder.setBolt("word-counter", new WordCounter(),3)
+		builder.setBolt("word-counter", new WordCounter(),1)
 				.fieldsGrouping("word-normalizer", new Fields("word"));
 		//配置
 		Config conf = new Config();
 		conf.put("wordsFile", "d:/text.txt");
-		conf.setDebug(true);
+		//conf.setDebug(true);
 		//提交Topology
 		conf.put(Config.TOPOLOGY_MAX_SPOUT_PENDING, 1);
 		//创建一个本地模式cluster
 		LocalCluster cluster = new LocalCluster();
 		cluster.submitTopology("Getting-Started-Toplogie", conf, builder.createTopology());
-		Thread.sleep(1000);
+		Thread.sleep(10000);
 		cluster.shutdown();
 	}
 }

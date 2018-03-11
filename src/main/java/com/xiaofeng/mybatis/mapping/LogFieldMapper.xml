@@ -6,7 +6,7 @@
       WARNING - @mbggenerated
     -->
     <id column="id" property="id" jdbcType="VARCHAR" />
-    <result column="fieldType" property="fieldType" jdbcType="TINYINT" />
+    <result column="fieldType" property="fieldType" jdbcType="VARCHAR" />
     <result column="fieldName" property="fieldName" jdbcType="VARCHAR" />
     <result column="fieldKey" property="fieldKey" jdbcType="VARCHAR" />
   </resultMap>

@@ -6,16 +6,13 @@ import java.util.Map;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+import com.google.common.collect.Queues;
 
-import java.util.List;
+import java.util.*;
 
-import java.util.Timer;
-import java.util.TimerTask;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
-import java.util.function.Consumer;
-import java.util.function.Predicate;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -44,10 +41,63 @@ public class App
 //                "{\"id\":\"eeretg44334\",\"dsId\":\"xxx\",\"quotaType\":1,\"quotaName\":\"sum xx\",\"fieldKey\":\"xx\"}]";
 //        JSONArray jsonArray = JSON.parseArray(arrayStr);
 //        System.out.println(jsonArray);
+
+
+        Matcher matcher = Pattern.compile("log", Pattern.CASE_INSENSITIVE).matcher("aa.log");
+        System.out.println();
+
+
+        JSONObject provinceJX = new JSONObject();
+        provinceJX.put("nc",1);
+        provinceJX.put("sr",3);
+
+        JSONObject provinceGD = new JSONObject();
+        provinceGD.put("sz",2);
+
+        JSONObject countryCN = new JSONObject();
+        countryCN.put("jx",provinceJX);
+        countryCN.put("gd",provinceGD);
+
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("CN",countryCN);
+
+        Queue<String> queue = new LinkedList<String>();
+        queue.add("country");
+        queue.add("province");
+        queue.add("city");
+        queue.add("count");
+
+        List result = Lists.newArrayList();
+        fun(Lists.newLinkedList(), jsonObject,result);
+
+        System.out.println(result);
+    }
+
+    public static  void fun(LinkedList<Object> list,JSONObject json,List<LinkedList<Object>> result){
+        LinkedList<Object> currentList = Lists.newLinkedList(list);
+        Iterator<String> it = json.keySet().iterator();
+        while (it.hasNext()) {
+            String key = it.next();
+            currentList.add(key);
+            Object obj = json.get(key);
+            if ( obj instanceof Map){
+                fun(currentList, (JSONObject) obj,result);
+                currentList.removeLast();
+            }else {
+                currentList.add(obj);
+                result.add(Lists.newLinkedList(currentList));
+                currentList.removeLast();
+                currentList.removeLast();
+            }
+        }
         String arrayStr = "[\"method\",\"url\",\"ts\"]";
         List<String> fieldList = com.alibaba.fastjson.JSON.parseArray(arrayStr,String.class);
         System.out.println(fieldList);
+
     }
+
+
+
 
     public static void test()
     {
