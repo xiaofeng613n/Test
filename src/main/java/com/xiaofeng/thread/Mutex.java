@@ -78,4 +78,28 @@ public class Mutex implements Lock
 	{
 		return sync.isHeldExclusively();
 	}
+
+
+	public static void main(String[] args) {
+		Mutex mutex = new Mutex();
+		Thread t1 = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				if( mutex.tryLock() ){
+					System.out.println("thread1 get lock");
+				}
+			}
+		});
+
+		Thread t2= new Thread(new Runnable() {
+			@Override
+			public void run() {
+				if( mutex.tryLock() ){
+					System.out.println("thread2 get lock");
+				}else {
+
+				}
+			}
+		});
+	}
 }
