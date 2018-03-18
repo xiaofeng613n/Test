@@ -13,6 +13,7 @@ import com.google.common.collect.Queues;
 
 import java.util.*;
 
+import java.util.function.BiConsumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -41,6 +42,15 @@ public class App
 //                "{\"id\":\"eeretg44334\",\"dsId\":\"xxx\",\"quotaType\":1,\"quotaName\":\"sum xx\",\"fieldKey\":\"xx\"}]";
 //        JSONArray jsonArray = JSON.parseArray(arrayStr);
 //        System.out.println(jsonArray);
+
+        BiConsumer<String,Integer> c = new BiConsumer<String, Integer>() {
+            @Override
+            public void accept(String s, Integer integer) {
+                System.out.println(s + " " + integer);
+            }
+        };
+
+        c.accept("xiao",1);
 
 
         Matcher matcher = Pattern.compile("log", Pattern.CASE_INSENSITIVE).matcher("aa.log");
