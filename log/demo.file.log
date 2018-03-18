@@ -1,0 +1,71 @@
+2018-03-11 21:41:09,354 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2018-03-11 21:41:09,398 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 8
+2018-03-11 21:41:09,686 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Platform: Windows
+2018-03-11 21:41:09,700 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2018-03-11 21:41:09,704 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] Java version: 8
+2018-03-11 21:41:09,721 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.theUnsafe: available
+2018-03-11 21:41:09,726 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2018-03-11 21:41:09,730 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] java.nio.Buffer.address: available
+2018-03-11 21:41:09,735 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] direct buffer constructor: available
+2018-03-11 21:41:09,740 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: available, true
+2018-03-11 21:41:09,741 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2018-03-11 21:41:09,742 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.DirectByteBuffer.<init>(long, int): available
+2018-03-11 21:41:09,743 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2018-03-11 21:41:09,746 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: C:\Users\xiao\AppData\Local\Temp (java.io.tmpdir)
+2018-03-11 21:41:09,746 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-03-11 21:41:09,762 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2018-03-11 21:41:09,763 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.maxDirectMemory: 1883242496 bytes
+2018-03-11 21:41:09,764 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2018-03-11 21:41:09,770 DEBUG [main] i.n.u.i.CleanerJava6 [Slf4JLogger.java:71] java.nio.ByteBuffer.cleaner(): available
+2018-03-11 21:41:10,035 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2018-03-11 21:41:10,036 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2018-03-11 21:41:10,163 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] org.jctools-core.MpscChunkedArrayQueue: available
+2018-03-11 21:41:15,515 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 3400 (auto-detected)
+2018-03-11 21:41:15,521 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:76] -Djava.net.preferIPv4Stack: false
+2018-03-11 21:41:15,521 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:76] -Djava.net.preferIPv6Addresses: false
+2018-03-11 23:08:17,172 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2018-03-11 23:08:20,559 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 8
+2018-03-11 23:08:22,729 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Platform: Windows
+2018-03-11 23:08:22,771 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2018-03-11 23:08:22,778 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] Java version: 8
+2018-03-11 23:08:22,813 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.theUnsafe: available
+2018-03-11 23:08:22,822 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2018-03-11 23:08:22,834 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] java.nio.Buffer.address: available
+2018-03-11 23:08:22,844 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] direct buffer constructor: available
+2018-03-11 23:08:22,853 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: available, true
+2018-03-11 23:08:22,854 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2018-03-11 23:08:22,856 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.DirectByteBuffer.<init>(long, int): available
+2018-03-11 23:08:22,858 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2018-03-11 23:08:22,862 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: C:\Users\xiao\AppData\Local\Temp (java.io.tmpdir)
+2018-03-11 23:08:22,864 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-03-11 23:08:22,887 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2018-03-11 23:08:22,888 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.maxDirectMemory: 1883242496 bytes
+2018-03-11 23:08:22,889 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2018-03-11 23:08:22,896 DEBUG [main] i.n.u.i.CleanerJava6 [Slf4JLogger.java:71] java.nio.ByteBuffer.cleaner(): available
+2018-03-11 23:08:23,148 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2018-03-11 23:08:23,149 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2018-03-11 23:08:23,257 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] org.jctools-core.MpscChunkedArrayQueue: available
+2018-03-11 23:09:04,379 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 6532 (auto-detected)
+2018-03-11 23:09:04,399 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:76] -Djava.net.preferIPv4Stack: false
+2018-03-11 23:09:04,400 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:76] -Djava.net.preferIPv6Addresses: false
+2018-03-11 23:09:04,581 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-03-11 23:09:05,699 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2018-03-11 23:09:05,899 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 54:35:30:ff:fe:18:45:58 (auto-detected)
+2018-03-11 23:09:05,956 DEBUG [main] i.n.u.i.InternalThreadLocalMap [Slf4JLogger.java:76] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2018-03-11 23:09:05,957 DEBUG [main] i.n.u.i.InternalThreadLocalMap [Slf4JLogger.java:76] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2018-03-11 23:09:06,066 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2018-03-11 23:09:06,067 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.targetRecords: 4
+2018-03-11 23:09:06,367 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 8
+2018-03-11 23:09:06,368 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 8
+2018-03-11 23:09:06,369 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2018-03-11 23:09:06,370 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2018-03-11 23:09:06,371 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2018-03-11 23:09:06,371 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2018-03-11 23:09:06,372 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2018-03-11 23:09:06,373 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2018-03-11 23:09:06,374 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2018-03-11 23:09:06,375 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2018-03-11 23:09:06,376 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.useCacheForAllThreads: true
+2018-03-11 23:09:06,456 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2018-03-11 23:09:06,457 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2018-03-11 23:09:06,458 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384

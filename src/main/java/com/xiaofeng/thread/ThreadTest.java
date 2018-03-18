@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.TimeZone;
+import java.util.concurrent.Callable;
 import java.util.concurrent.locks.Lock;
 
 /**
@@ -17,12 +18,7 @@ public class ThreadTest
 {
 	public static void main(String[] args)
 	{
-		//testMutex();
-		List<Integer> list = Lists.newArrayList();
-		list.add(1);
-		list.add(2);
-		list.stream().filter( p -> p ==1).forEach( c -> System.out.println(c));
-		getStartTimeOfDay(0,"");
+
 
 	}
 	public static long getStartTimeOfDay(long now, String timeZone) {
@@ -38,17 +34,4 @@ public class ThreadTest
 		return calendar.getTimeInMillis();
 	}
 
-	public static void testMutex()
-	{
-		Lock lock = new Mutex();
-		lock.lock();
-		try
-		{
-
-		}
-		finally
-		{
-			lock.unlock();
-		}
-	}
 }
