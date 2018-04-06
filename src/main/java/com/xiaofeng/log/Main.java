@@ -1,7 +1,9 @@
 package com.xiaofeng.log;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import org.apache.log4j.Logger;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by xiaofeng on 2017/9/27
@@ -9,17 +11,37 @@ import org.slf4j.LoggerFactory;
  */
 public class Main
 {
-	//final Logger logger = Logger.getLogger(Main.class);
-	final Logger logger = LoggerFactory.getLogger(Main.class);
+	final Logger logger = Logger.getLogger(Main.class);
+	//final Logger logger = LoggerFactory.getLogger(Main.class);
 
 	public void test()
 	{
 		logger.info("hello ,just for log4j!");
-		logger.info("hello ,just test for slf4j! {}","ok");
+		//logger.info("hello ,just test for slf4j! {}","ok");
 	}
-	public static void main(String[] args)
-	{
+
+	public void log(){
+		logger.info("hello ,just for log4j! 1" + System.currentTimeMillis());
+		logger.info("hello ,just for log4j! 2" + System.currentTimeMillis());
+		logger.info("hello ,just for log4j! 3" + System.currentTimeMillis());
+	}
+	public static void main(String[] args) throws InterruptedException {
 		Main main = new Main();
-		main.test();
+		Thread thread = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				while (true){
+					main.log();
+					try {
+						TimeUnit.MILLISECONDS.sleep(500);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+				}
+			}
+		});
+		thread.start();
+		TimeUnit.SECONDS.sleep(Integer.MAX_VALUE);
+
 	}
 }
