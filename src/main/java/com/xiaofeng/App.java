@@ -1,5 +1,8 @@
 package com.xiaofeng;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.*;
 import java.util.List;
 import java.util.List;
 import java.util.Map;
@@ -25,13 +28,6 @@ public class App
 {
     public static void main( String[] args )
     {
-//         int i = Integer.valueOf("00");
-//         System.out.println(i);
-//         test();
-//         System.out.println( "Hello World!" );
-//
-//         ExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
-
 //        String s = "{\"query\": \"FROM \\\"M\\\" FROM \\\"jvm-db\\\".\\\"autogen\\\".\\\"%s\\\" WHERE time > :dashboardTime:\",}%";
 //      String s1 = s.replaceAll("FROM","xx");
 //        System.out.println(s);
@@ -43,44 +39,37 @@ public class App
 //        JSONArray jsonArray = JSON.parseArray(arrayStr);
 //        System.out.println(jsonArray);
 
-        BiConsumer<String,Integer> c = new BiConsumer<String, Integer>() {
+//        BiConsumer<String,Integer> c = new BiConsumer<String, Integer>() {
+//            @Override
+//            public void accept(String s, Integer integer) {
+//                System.out.println(s + " " + integer);
+//            }
+//        };
+//
+//        c.accept("xiao",1);
+//
+//
+//        Matcher matcher = Pattern.compile("log", Pattern.CASE_INSENSITIVE).matcher("aa.log");
+//        System.out.println();
+
+
+        PathMatcher matcher = FileSystems.getDefault().getPathMatcher("regex:" + "log");
+        DirectoryStream.Filter filter = new DirectoryStream.Filter<Path>(){
             @Override
-            public void accept(String s, Integer integer) {
-                System.out.println(s + " " + integer);
+            public boolean accept(Path entry) throws IOException {
+                return matcher.matches(entry.getFileName());
             }
         };
-
-        c.accept("xiao",1);
-
-
-        Matcher matcher = Pattern.compile("log", Pattern.CASE_INSENSITIVE).matcher("aa.log");
+        List<File> result = new ArrayList<>();
+        Path path = Paths.get("E:\\logs");
+        try (DirectoryStream<Path> stream = Files.newDirectoryStream(path, filter)) {
+            for (Path entry : stream) {
+                result.add(entry.toFile());
+            }
+        } catch (IOException e) {
+            System.out.println();
+        }
         System.out.println();
-
-
-        JSONObject provinceJX = new JSONObject();
-        provinceJX.put("nc",1);
-        provinceJX.put("sr",3);
-
-        JSONObject provinceGD = new JSONObject();
-        provinceGD.put("sz",2);
-
-        JSONObject countryCN = new JSONObject();
-        countryCN.put("jx",provinceJX);
-        countryCN.put("gd",provinceGD);
-
-        JSONObject jsonObject = new JSONObject();
-        jsonObject.put("CN",countryCN);
-
-        Queue<String> queue = new LinkedList<String>();
-        queue.add("country");
-        queue.add("province");
-        queue.add("city");
-        queue.add("count");
-
-        List result = Lists.newArrayList();
-        fun(Lists.newLinkedList(), jsonObject,result);
-
-        System.out.println(result);
     }
 
     public static  void fun(LinkedList<Object> list,JSONObject json,List<LinkedList<Object>> result){
