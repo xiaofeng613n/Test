@@ -35,9 +35,9 @@ public class MsgUtil {
 	}
 
 	public static void recieveMsg(SocketChannel socketChannel){
-		int port = socketChannel.socket().getPort();
+//		int port = socketChannel.socket().getPort();
 		String ip = socketChannel.socket().getRemoteSocketAddress().toString();
-		final String tag = ip + ":" + port;
+		final String tag = ip ;
 
 		ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
 		byteBuffer.clear();
@@ -50,6 +50,12 @@ public class MsgUtil {
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
+			try {
+				socketChannel.close();
+				socketChannel.socket().close();
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
 		}
 	}
 

@@ -65,7 +65,10 @@
         <table tableName="log_field" domainObjectName="LogField">
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>-->
-        <table tableName="log_model" domainObjectName="LogModel">
+        <table tableName="flume_instance" domainObjectName="FlumeInstance">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+        <table tableName="flume_tailfile" domainObjectName="FlumeTailfile">
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
     </context>

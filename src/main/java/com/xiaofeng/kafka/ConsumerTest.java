@@ -2,6 +2,7 @@ package com.xiaofeng.kafka;
 
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.common.TopicPartition;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -30,7 +31,7 @@ public class ConsumerTest {
 		new Thread(runnable).start();
 
 		Properties props = new Properties();
-		props.put("bootstrap.servers", "linux1:9093");
+		props.put("bootstrap.servers", "10.40.6.151:9092,10.40.6.152:9092,10.40.6.153:9092");
 		props.put("group.id", "my-group");
 		props.put("auto.offset.reset", "earliest");
 		props.put("enable.auto.commit", "true");
@@ -40,7 +41,10 @@ public class ConsumerTest {
 		KafkaConsumer<String, String> consumer = new KafkaConsumer<>(props);
 
 		// 最开始的订阅列表：atopic、btopic
-		consumer.subscribe(Arrays.asList("topic2"));
+		consumer.subscribe(Arrays.asList("flumeMonitor"));
+		TopicPartition p = new TopicPartition("flumeMonitor", 0);
+//		consumer.assign(Arrays.asList(p));
+//		consumer.seek(p, 	830090);
 		while (true) {
 			ConsumerRecords<String, String> records = consumer.poll(2000); //表示每2秒consumer就有机会去轮询一下订阅状态是否需要变更
 			// 本例不关注消息消费，因此每次只是打印订阅结果！

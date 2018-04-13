@@ -1,4 +1,4 @@
-package com.xiaofeng.pool;
+package com.xiaofeng.objectPool;
 
 
 import org.apache.commons.pool2.*;

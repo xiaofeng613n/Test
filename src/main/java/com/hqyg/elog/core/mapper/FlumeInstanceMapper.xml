@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hqyg.elog.core.mapper.FlumeInstanceMapper" >
+  <resultMap id="BaseResultMap" type="com.hqyg.elog.core.api.entity.log.FlumeInstance" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="agentName" property="agentname" jdbcType="VARCHAR" />
+    <result column="ip" property="ip" jdbcType="VARCHAR" />
+    <result column="hostname" property="hostname" jdbcType="VARCHAR" />
+    <result column="flumeConfig" property="flumeconfig" jdbcType="VARCHAR" />
+    <result column="lastCollectTime" property="lastcollecttime" jdbcType="INTEGER" />
+    <result column="heapInit" property="heapinit" jdbcType="INTEGER" />
+    <result column="heapUsed" property="heapused" jdbcType="INTEGER" />
+    <result column="heapMax" property="heapmax" jdbcType="INTEGER" />
+    <result column="heapCommitted" property="heapcommitted" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>
