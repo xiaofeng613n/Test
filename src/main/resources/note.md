@@ -67,7 +67,8 @@ flume 官方插件，常用两种方式采集增量日志
 
 mananger
 
-conf/application.conf
+conf/
+application.conf
 play.http.context修改为"/kafka"
 kafka-manager.zkhosts修改为"zk的ip:2181/kafka"
 basicAuthentication.password修改为"elog"

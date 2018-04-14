@@ -2,7 +2,7 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <plugins>
-        <plugin interceptor="mybatis.plugin.SqlPrintPlugin">
+        <plugin interceptor="com.xiaofeng.mybatis.plugin.SqlPrintPlugin">
             <property name="dialect" value="mysql"/>
         </plugin>
     </plugins>
@@ -12,7 +12,7 @@
             <transactionManager type="JDBC"></transactionManager>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/mydb"/>
+                <property name="url" value="jdbc:mysql://10.40.6.187:3306/test?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true"/>
                 <property name="username" value="root"/>
                 <property name="password" value="123456"/>
             </dataSource>
@@ -21,7 +21,8 @@
 
 
     <mappers>
-        <mapper resource="mybatis/mapping/userMapper.xml"/>
+        <mapper resource="mybatis/TestMapper.xml"/>
+        <!--<mapper resource="com/xiaofeng/mb/mapping/TestMapper.xml"/>-->
         <!--  <mapper class="mybatis.dao.IUserDao"/>-->
     </mappers>
 

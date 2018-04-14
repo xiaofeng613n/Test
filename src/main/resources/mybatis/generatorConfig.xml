@@ -65,11 +65,9 @@
         <table tableName="log_field" domainObjectName="LogField">
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>-->
-        <table tableName="flume_instance" domainObjectName="FlumeInstance">
+        <table tableName="test" domainObjectName="Test">
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
-        <table tableName="flume_tailfile" domainObjectName="FlumeTailfile">
-            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
-        </table>
+
     </context>
 </generatorConfiguration>
