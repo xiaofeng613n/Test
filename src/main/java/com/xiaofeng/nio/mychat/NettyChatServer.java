@@ -1,5 +1,7 @@
 package com.xiaofeng.nio.mychat;
 
+import com.google.common.base.Strings;
+import com.xiaofeng.nio.mychat.codec.ChatHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -20,10 +22,19 @@ public class NettyChatServer implements Runnable{
     }
 
     public void send(String line){
-        msgHandler.getCtx().writeAndFlush(line);
+        final Channel channel = chatHandler.getChannel();
+//        if( !Strings.isNullOrEmpty(line)){
+//            for (int i = 0; i < line.length(); i++) {
+//                channel.write(line.charAt(i));
+//            }
+//            channel.flush();
+//        }
+        channel.writeAndFlush(line);
     }
 
-    private MsgHandler msgHandler = new MsgHandler();
+    private ChatHandler chatHandler = new ChatHandler();
+    private ChatChannelInitializer channelInitializer = new ChatChannelInitializer(chatHandler);
+
 
     public void start(){
         EventLoopGroup bossGroup = new NioEventLoopGroup(1);
@@ -33,12 +44,7 @@ public class NettyChatServer implements Runnable{
             ServerBootstrap server = new ServerBootstrap();
             server.group(bossGroup, workerGroup)
                     .channel(NioServerSocketChannel.class)
-                    .childHandler(new ChannelInitializer<SocketChannel>() {
-                        @Override
-                        protected void initChannel(SocketChannel ch) throws Exception {
-                            ch.pipeline().addLast(msgHandler);
-                        }
-                    })
+                    .childHandler(channelInitializer)
                     .childOption(ChannelOption.SO_BACKLOG.SO_KEEPALIVE, true);
 
             ChannelFuture f = server.bind(8888).sync();
